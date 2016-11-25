@@ -1,0 +1,1842 @@
+﻿<!DOCTYPE HTML>
+<html lang="ar">
+<head>
+	<meta http-equiv="content-type" content="text/html" />
+	<meta name="author" content="Chad Nico Lazarra inspired by Clarence Quintos" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />    
+    <link rel="stylesheet" href="css/bootstrap.min.css"  />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="icon" href="http://www.asiatravel.com/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css" />
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script src="https://code.jquery.com/ui/jquery-ui-git.js"></script>
+    
+    <title>Asiatravel.com | UAE Asiatravel</title>
+    
+    
+    <script>
+        $(document).ready(function(){
+            
+           
+            
+            $("#btn-oneway").click(function(){
+                
+                
+                $("#arrivalDate").prop('disabled', true);
+                $("#btn-rnd").removeClass("active")
+                
+            });
+            
+              $("#btn-rnd").click(function(){
+                
+                
+                $("#arrivalDate").prop('disabled', false);
+      
+            });
+      
+            $("#btn-multi").click(function (){
+                
+                window.location="http://flight.asiatravel.com/crs.flight/www/Multi.Stop.Flight.aspx?lan=ar-AE";
+                
+            });
+            
+            
+            
+         $("#withBed").change(function (){
+            var withBed = $("#withBed").val();
+            
+            if (withBed > 0){
+            $("#withBedAge").prop('disabled',false);
+            }else{
+            $("#withBedAge").prop('disabled',true);  
+            }
+            
+         });
+
+         $("#withoutBed").change(function (){
+            var withBed = $("#withoutBed").val();
+            
+            if (withBed > 0){
+            $("#withoutBedAge").prop('disabled',false);
+            }else{
+            $("#withoutBedAge").prop('disabled',true);  
+            }
+            
+         });        
+         
+         
+           $("#fwithBed").change(function (){
+            var withBed = $("#fwithBed").val();
+            
+            if (withBed > 0){
+            $("#fwithBedAge").prop('disabled',false);
+            }else{
+            $("#fwithBedAge").prop('disabled',true);  
+            }
+            
+         });
+
+         $("#fwithoutBed").change(function (){
+            var withBed = $("#fwithoutBed").val();
+            
+            if (withBed > 0){
+            $("#fwithoutBedAge").prop('disabled',false);
+            }else{
+            $("#fwithoutBedAge").prop('disabled',true);  
+            }
+            
+         });   
+          $(".Datepicker" ).datepicker();
+        });
+        
+
+    
+    
+    </script>
+    
+</head>
+
+<body dir="rtl">
+<!-- Header-->
+
+ <div class="container" style="margin-top: 20px;">
+
+        <div class="row">
+            
+            <div class="col-lg-6 col-md-6  col-sm-6 col-xs-12">
+        <div class="left-logo">
+            
+        <img src="images/fb.png" width="34" height="34" />
+        <img src="images/twitter.png" width="34" height="34" />
+        <img src="images/apple.png" width="122" height="40" />
+             <img src="images/flag-en.png" /> <a href="http://www.asiatravel.com/index.html?trck=gblmn&sid=1000&trck=&lan=">English <span class="caret"></span></a>
+       
+             
+        </div>
+   
+       
+            </div>  
+            
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+    
+                <div class="right-logo hidden-xs"><img src="images/logo-asiatravel.jpg" class="img-responsive" /></div>   
+                <img src="images/logo-asiatravel-big.jpg" class="img-responsive visible-xs" style="width:100%;"  /> 
+                
+            </div>
+  </div>
+</div>
+<!---Main Menu-->
+
+<nav class="navbar navbar-default navbar-spacing" style="margin-bottom: 0px;">
+<div class="container-fluid">
+    
+    <div class="navbar-header navbar-right">
+        <a href="#" class="navbar-brand"><i class="fa fa-home home text-white"></i></a>
+        <button type="button" class="navbar-toggle" data-target="#myNav" data-toggle="collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+    </div>
+   
+        
+     <div class="collapse navbar-collapse" id="myNav">
+        <ul class="nav navbar-nav navbar-right">
+         <li><a href="#"><span class="text-white">عروضات خاصة</span></a></li>
+          <li><a href="#"><span class="text-white">جولات/اماكن سياحية و رزم</span></a></li>
+           <li><a href="#"><span class="text-white">فندق+طيران</span></a></li>
+            <li><a href="#"><span class="text-white">طيران</span></a></li>
+            <li class="active-nav"><a href="#"><span class="text-white">فندق</span></a></li>
+           
+           
+           
+           
+        
+        </ul>
+     
+     
+     </div>   
+</div>
+</nav>
+
+
+<div class="row">
+    <div class="col-lg-12 col-md-12 col-xs-12 ">
+    
+    
+    <div class="carousel slide" data-interval="6000" id="myCarousel" data-ride="carousel" style="height: 333px;">
+    
+    
+    
+
+        <div class="carousel-inner hidden-xs hidden-sm" role="listbox">
+            <div class="item active">
+                <img src="images/slides/slide1.jpg" />
+            </div>
+            
+            <div class="item">
+                <img src="images/slides/slide2.jpg" />
+            </div>
+            
+            <div class="item">
+                <img src="images/slides/slide3.jpg" />
+            </div>
+            
+            <div class="item">
+                <img src="images/slides/slide4.jpg" />
+            </div>
+            
+            
+        </div>
+        
+            <div class="options">
+                
+                
+                    <div class="first-col">
+                         
+                            
+                              <ul class="nav nav-pills nav-stacked" dir="ltr" style="text-align: right;">
+                                    <li class="active" ><a href="#menu1" data-toggle="tab"><i class="fa fa-bed sizebig" aria-hidden="true"> </i> فندق </a></li>
+                                    <li ><a href="#menu2" data-toggle="tab"><span class="glyphicon glyphicon-plane "></span> طيران </a></li>
+                                    <li ><a href="#menu3" data-toggle="tab"><span class="glyphicon glyphicon-camera "></span> أماكن سياحية </a></li>
+                                    <li ><a href="#menu4" data-toggle="tab"><span class="glyphicon glyphicon-briefcase "></span> رزم </a></li>
+                        
+                                </ul>
+                            
+                            
+                            
+                      
+                    </div>
+                    <div class="second-col">
+                    <!--Hotel Menu-->
+                 <div class="tab-content">  
+                    
+                        <div class="tab-pane active fade in" id="menu1">
+                            <form role="form">
+                           <h4 class="option-size">البحث عن الفنادق/الوجهات</h4>
+                       <div class="row">
+                       
+                        <div class="col-lg-12 col-md-12 col-xs-12 ">
+                           	<div class="form-group">
+                                    <div class="icon-addon addon-md">
+                                        <input type="text" placeholder="أدخل المدينة أو الوجهة" class="form-control" id="search">
+                                        <label for="email" class="glyphicon glyphicon-search" rel="tooltip" title="email"></label>
+                                    </div>
+                            </div>
+                       </div>    
+                       
+                       <div class="col-lg-6 col-md-6 col-xs-6"> 
+                       <h4 class="option-size">تاريخ تسجيل الدخول</h4>
+                            <div class="form-group">
+                                       <div class="icon-addon addon-md">
+
+                                        <input type="date"  class="form-control" id="checkinDate" />
+                                        <label for="Check In" class="glyphicon glyphicon-calendar" rel="tooltip" title="Check In"></label>
+                                       </div>  
+                                       
+                                        
+                                   </div>
+                        </div>
+                        
+                        <div class="col-lg-6 col-md-6 col-xs-6"> 
+                        <h4 class="option-size">تاريخ تسجيل الخروج</h4>
+                            <div class="form-group">
+                                       <div class="icon-addon addon-md">
+
+                                        <input type="date"  class="form-control" id="checkoutDate" />
+                                        <label for="Check In" class="glyphicon glyphicon-calendar" rel="tooltip" title="Check In"></label>
+                                       </div>  
+                                       
+                                        
+                                   </div>
+                        </div>
+                        
+                        <div class="col-lg-6 col-md-6 col-xs-6"> 
+                       <h4 class="option-size">غرف</h4>
+                            <div class="form-group">
+                            
+                                        <select class="form-control">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                            <option>6</option>
+                                            <option>7</option>
+                                            <option>8</option>
+                                        </select>
+                                          
+                                   </div>
+                        </div>
+                        
+                        <div class="col-lg-6 col-md-6 col-xs-6"> 
+                        <h4 class="option-size">البالغين في الغرفة</h4>
+                            <div class="form-group">
+                            
+                                        <select class="form-control">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                        
+                                        </select>
+                                          
+                                   </div>        
+                        </div>
+                        
+                        <div class="col-lg-12 col-md-12 col-xs-12">
+                                                    
+                            <button type="button" class="btn-info btn-style">  <i class="fa fa-search lg"></i> بحث</button>
+                           
+                        </div>
+                                                
+                 </div>  <!--End Row--> 
+                   </form>         
+             </div>   <!--End Hotel Menu-->
+              
+             
+             <!--- Flight Tickets Start-->
+             <div class="tab-pane fade in" id="menu2">
+             
+             
+                <div class="row">
+                  <form role="form"> 
+                    <div class="col-lg-12 col-md-12 col-xs-12">
+                    <div class="btn-group" style="margin-bottom: 15px;">
+                        <button type="button" class="btn btn-default active" id="btn-rnd">رحلة ذهاب و عودة</button>
+                        <button type="button" class="btn btn-default" id="btn-oneway">وجهة واحدة</button>
+                        <button type="button" class="btn btn-default" id="btn-multi">توقف متعدد</button>
+                    </div>    
+                    </div>
+                    
+                    <div class="col-lg-6 col-md-6 col-xs-6">
+                        <div class="form-group">
+                            
+                             <input type="text" class="form-control" placeholder="مدينة الانطلاق" />
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-xs-6">
+                        <div class="form-group">
+                             
+                             <input type="text" class="form-control" placeholder="مدينة الوصول" />
+                        </div>
+                        
+                    </div>
+                    
+                     <div class="col-lg-6 col-md-6 col-xs-6"> 
+                       <h4 class="option-size">تاريخ الانطلاق</h4>
+                            <div class="form-group">
+                                       <div class="icon-addon addon-md">
+
+                                        <input type="date"  class="form-control" id="departureDate" />
+                                        <label for="Departure Date" class="glyphicon glyphicon-calendar" rel="tooltip" title="Departure Date"></label>
+                                       </div>  
+                                       
+                                        
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-6 col-md-6 col-xs-6"> 
+                        <h4 class="option-size">تاريخ الوصول</h4>
+                            <div class="form-group">
+                                       <div class="icon-addon addon-md">
+
+                                        <input type="date"  class="form-control" id="arrivalDate" />
+                                        <label for="Arrival Date" class="glyphicon glyphicon-calendar" rel="tooltip" title="Arrival Date"></label>
+                                       </div>  
+                                       
+                                        
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-4 col-md-4 col-xs-4"> 
+                            <h4 class="option-size">الدرجة</h4>
+                            <div class="form-group">
+                            
+                                        <select class="form-control">
+                                            <option>الدرجة السياحية (Economy Class)</option>
+                                            <option>الدرجة السياحية المتميزة (Premium Economy)</option>
+                                            <option>درجة رجال الاعمال (Business)</option>
+                                            <option>الدرجة الاولى (First Class)</option>
+                                        
+                                        </select>
+                                          
+                            </div>   
+                        </div>
+                        
+                        <div class="col-lg-4 col-md-4 col-xs-4"> 
+                           <h4 class="option-size">بالغ</h4>
+                            <div class="form-group">
+                            
+                                        <select class="form-control">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                            <option>6</option>
+                                            <option>7</option>
+                                            <option>8</option>
+                                            <option>9</option>
+                                            <option>10</option>
+                                        
+                                        </select>
+                                          
+                            </div>   
+                        </div>
+                        
+                        <div class="col-lg-4 col-md-4 col-xs-4"> 
+                         <h4 class="option-size">قاصر</h4>
+                            <div class="form-group">
+                            
+                                        <select class="form-control">
+                                            <option>0</option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                            <option>6</option>
+                                            <option>7</option>
+                                            <option>8</option>
+                                            <option>9</option>
+                                            <option>10</option>
+                                        
+                                        </select>
+                                          
+                            </div>   
+                        </div>
+                        
+                        <div class="col-lg-12 col-md-12 col-xs-12">
+                         <button type="button" class="btn-info btn-style">  <i class="fa fa-search lg"></i> بحث</button>
+                        </div>
+                        
+                        <!---End of Flight Section-->
+                   </form> 
+                </div>
+             
+             
+             </div>  
+                    <!--Attaction Section-->
+             <div class="tab-pane fade in" id="menu3">
+               <form role="form">
+                  <h4 class="option-size">الوجهة</h4>
+                  <div class="row">
+                  
+                  
+                   <div class="col-lg-12 col-md-12 col-xs-12">
+                    <div class="form-group">
+                        <select class="form-control" id="inputTourKeyword">
+                        <option value="0">اختيار الوجهة</option>
+                        
+                        <optgroup class="cnopt" name="AR" label="الارجنتين (Argentina)">
+                            <option class="ctopt" value="AR,BUE">بوينوس ايريس (Buenos Aires)</option>
+                            <option class="ctopt" value="AR,FTE">ال كالافات (El Calafate)</option>
+                            <option class="ctopt" value="AR,USH">أوشويا (Ushuaia)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="AU" label="أستراليا (Australia)">
+                            <option class="ctopt" value="AU,ADL">أديلاييد (Adelaide)</option>
+                            <option class="ctopt" value="AU,BNE">بريسباين (Brisbane)</option>
+                            <option class="ctopt" value="AU,MEL">ميلبورن (Melbourne (AU))</option>
+                            <option class="ctopt" value="AU,PER">بيرث (Perth)</option>
+                            <option class="ctopt" value="AU,SYD">سيدني (Sydney (AU))</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="AT" label="النمسا (Austria)">
+                            <option class="ctopt" value="AT,SZG">سالزبورغ (Salzburg)</option>
+                            <option class="ctopt" value="AT,VIE">فيينا (Vienna)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="BB" label="باربادوس (Barbados)">
+                            <option class="ctopt" value="BB,BGI">باربادوس (Barbados)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="BE" label="بيلجيكا (Belgium)">
+                        <option class="ctopt" value="BE,BRU">بروكسيل (Brussels)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="BR" label="البرازيل (Brazil)">
+                        <option class="ctopt" value="BR,MAO">ماناوس (Manaus)</option>
+                        <option class="ctopt" value="BR,RIO">ريو دي جينيرو (Rio de Janeiro)</option>
+                        <option class="ctopt" value="BR,SSA">سالفادور (Salvador)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="BN" label="بروناي دار السلام">
+                        <option class="ctopt" value="BN,BWN">بروناي (Brunei)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="KH" label="كامبوديا (Cambodia)">
+                        <option class="ctopt" value="KH,PNH">بنوم بينه (Phnom Penh)</option>
+                        <option class="ctopt" value="KH,REP">سييم ريب (Siem Reap)</option>
+                        <option class="ctopt" value="KH,KOS">سيهانوكفيل (Sihanoukville)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="CA" label="كندا (Canada)">
+                        <option class="ctopt" value="CA,YYC">كالغلري (Calgary)</option>
+                        <option class="ctopt" value="CA,YHZ">هاليفاكس (Halifax)</option>
+                        <option class="ctopt" value="CA,YMQ">مونتريال (Montreal)</option>
+                        <option class="ctopt" value="CA,NIA">شلالات نياغارا (Niagara Falls)</option>
+                        <option class="ctopt" value="CA,YQB">كيبيك (Quebec)</option>
+                        <option class="ctopt" value="CA,YVR">فانكوفر (Vancouver)</option>
+                        <option class="ctopt" value="CA,YYJ">فيكتوريا (Victoria (CA))</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="KY" label="جزر كايمان (Cayman Islands)">
+                        <option class="ctopt" value="KY,GCM">جزيرة كايمان الكبرى (Grand Cayman Island)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="CN" label="الصين (China)">
+                        <option class="ctopt" value="CN,BJS">بيكين (Beijing)</option>
+                        <option class="ctopt" value="CN,CAN">هوانغزهود (Guangzhou)</option>
+                        <option class="ctopt" value="CN,KWL">غويلين (Guilin)</option>
+                        <option class="ctopt" value="CN,SHA">شانغهاي (Shanghai)</option>
+                        <option class="ctopt" value="CN,SIA">كسي ان (Xi An)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="HR" label="كرواتيا (Croatia)">
+                        <option class="ctopt" value="HR,DBV">دوبروفنيك (Dubrovnik)</option>
+                        <option class="ctopt" value="HR,SPU">سبليت (Split)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="CZ" label="جمهورية التشيك (Czech Republic)">
+                        <option class="ctopt" value="CZ,PRG">براغ (Prague)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="DK" label="الدنمارك (Denmark)">
+                        <option class="ctopt" value="DK,CPH">كوبينهاغن (Copenhagen)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="DO" label="جمهورية الدومينيكان (Dominican Republic)">
+                        <option class="ctopt" value="DO,LRM">لا رومانا (La Romana)</option>
+                        <option class="ctopt" value="DO,POP">بويرتو بلاتا (Puerto Plata)</option>
+                        <option class="ctopt" value="DO,PUJ">بونتا كانا (Punta Cana)</option>
+                        <option class="ctopt" value="DO,SDQ">سانتو دومينغو (Santo Domingo (DO))</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="FR" label="فرنسا (France)">
+                        <option class="ctopt" value="FR,AVN">أفينيون (Avignon)</option>
+                        <option class="ctopt" value="FR,BOD">بوردو (Bordeaux)</option>
+                        <option class="ctopt" value="FR,MRS">مارسيليا (Marseille)</option>
+                        <option class="ctopt" value="FR,NCE">نيس (Nice)</option>
+                        <option class="ctopt" value="FR,PAR">باريس (Paris)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="DE" label="المانيا (Germany)">
+                        <option class="ctopt" value="DE,BER">بيرلين (Berlin)</option>
+                        <option class="ctopt" value="DE,FRA">فرانكفورت (Frankfurt)</option>
+                        <option class="ctopt" value="DE,MUC">ميونيخ (Munich)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="GR" label="اليونان (Greece)">
+                        <option class="ctopt" value="GR,ATH">اتينا (Athens (GR))</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="HK" label="هونكونغ-الصين (Hong Kong (sar) China)">
+                        <option class="ctopt" value="HK,HKG">هونكونغ (Hong Kong)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="HU" label="هنغاريا (Hungary)">
+                        <option class="ctopt" value="HU,BUD">بودابيست (Budapest)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="IS" label="ايكاند (Iceland)">
+                        <option class="ctopt" value="IS,REK">ريكجافيتش (Reykjavik)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="IN" label="الهند (India)">
+                        <option class="ctopt" value="IN,AGR">أغرا (Agra)</option>
+                        <option class="ctopt" value="IN,AMD">أحمد أباد (Ahmedabad)</option>
+                        <option class="ctopt" value="IN,BLR">بانغالور (Bangalore)</option>
+                        <option class="ctopt" value="IN,MAA">تشيناي (Chennai)</option>
+                        <option class="ctopt" value="IN,GOI">غوا (Goa)</option>
+                        <option class="ctopt" value="IN,HYD">حيدر أباد (Hyderabad)</option>
+                        <option class="ctopt" value="IN,JAI">جايبور (Jaipur)</option>
+                        <option class="ctopt" value="IN,COK">كوتشي (Kochi (IN))</option>
+                        <option class="ctopt" value="IN,CCU">كولكاتا (Kolkata)</option>
+                        <option class="ctopt" value="IN,BOM">مومباي (Mumbai)</option>
+                        <option class="ctopt" value="IN,DEL">نيو دلهي (New Delhi)</option>
+                        <option class="ctopt" value="IN,TRV">تيروفانانتابورام (Thiruvananthapuram)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="ID" label="اندونيسيا (Indonesia)">
+                        <option class="ctopt" value="ID,BDO">باندونغ (Bandung)</option>
+                        <option class="ctopt" value="ID,BTH">باتام (Batam)</option>
+                        <option class="ctopt" value="ID,ID6">بينتان (Bintan)</option>
+                        <option class="ctopt" value="ID,DPS">دينباسار بالي (Denpasar Bali)</option>
+                        <option class="ctopt" value="ID,JKT">جاكارتا (Jakarta)</option>
+                        <option class="ctopt" value="ID,LOP">لومبوك (Lombok(Mataram))</option>
+                        <option class="ctopt" value="ID,MLG">مالانغ (Malang)</option>
+                        <option class="ctopt" value="ID,SUB">سورابايا (Surabaya)</option>
+                        <option class="ctopt" value="ID,JOG">يوغياغارتا (Yogyakarta)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="IE" label="الجمهورية الايرلاندية (Ireland Republic of)">
+                        <option class="ctopt" value="IE,DUB">دبلين (Dublin)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="IL" label="اسرائيل (Israel)">
+                        <option class="ctopt" value="IL,TLV">تل ابيب (Tel Aviv)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="IT" label="ايطاليا (Italy)">
+                        <option class="ctopt" value="IT,FLR">فلورانس (Florence (IT))</option>
+                        <option class="ctopt" value="IT,MIL">ميلانو (Milan)</option>
+                        <option class="ctopt" value="IT,NAP">نابولي (Naples (IT))</option>
+                        <option class="ctopt" value="IT,ROM">روما (Rome)</option>
+                        <option class="ctopt" value="IT,VCE">فينيسيا (Venice)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="JP" label="اليابان (Japan)">
+                        <option class="ctopt" value="JP,UKY">كيوتو (Kyoto)</option>
+                        <option class="ctopt" value="JP,TYO">طوكيو (Tokyo)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="KR" label="شعب لاو (Korea (South))">
+                        <option class="ctopt" value="KR,SEL">سيول (Seoul)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="LA" label="شعب لاو (Lao People)" democratic="" republic="">
+                        <option class="ctopt" value="LA,LPQ">لوانغ بارابانغ (Luang Prabang)</option>
+                        <option class="ctopt" value="LA,VTE">فيينتيان (Vientiane)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="MO" label="ماكاو الصين (Macao (sar) China)">
+                        <option class="ctopt" value="MO,MFM">ماكاو (Macau)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="MY" label="ماليزيا (Malaysia)">
+                        <option class="ctopt" value="MY,IPH">ايبوه (Ipoh)</option>
+                        <option class="ctopt" value="MY,JHB">جوهور باهرو (Johor Bahru)</option>
+                        <option class="ctopt" value="MY,BKI">كوتا كينابالو (Kota Kinabalu)</option>
+                        <option class="ctopt" value="MY,KUL">كوالالامبور (Kuala Lumpur)</option>
+                        <option class="ctopt" value="MY,KCH">كوتشينغ (Kuching)</option>
+                        <option class="ctopt" value="MY,LGK">لانغكاوي (Langkawi)</option>
+                        <option class="ctopt" value="MY,PEN">بيناناغ (Penang)</option>
+                        <option class="ctopt" value="MY,SDK">سانداكان (Sandakan)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="MX" label="ميكسيكو (Mexico)">
+                        <option class="ctopt" value="MX,CUN">كانكون (Cancun)</option>
+                        <option class="ctopt" value="MX,CZM">كوزوميل (Cozumel)</option>
+                        <option class="ctopt" value="MX,MEX">مدينة ميكسيكو (Mexico City)</option>
+                        <option class="ctopt" value="MX,PVR">بويرتو فالارتا (Puerto Vallarta)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="MC" label="موناكو (Monaco)">
+                        <option class="ctopt" value="MC,MCM">مونتي كارلو (Monte Carlo)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="MA" label="المغرب (Morocco)">
+                        <option class="ctopt" value="MA,RAK">مراكش (Marrakech)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="MM" label="ميانمار (Myanmar)">
+                        <option class="ctopt" value="MM,BPE">باغان (Bagan)</option>
+                        <option class="ctopt" value="MM,MM7">بحيرة مينشوانغ (Inle Lake)</option>
+                        <option class="ctopt" value="MM,MDL">ماندالاي (Mandalay)</option>
+                        <option class="ctopt" value="MM,MM4">نيوانغ شوي (Nyaung Shwe)</option>
+                        <option class="ctopt" value="MM,RGN">يانغون (Yangon)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="NP" label="النيبال (Nepal)">
+                        <option class="ctopt" value="NP,KTM">كاتماندو (Kathmandu)</option>
+                        <option class="ctopt" value="NP,PKR">بوكارا (Pokhara)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="NL" label="هولاندا (Netherlands)">
+                        <option class="ctopt" value="NL,AMS">أمستردام (Amsterdam)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="NZ" label="نيوزيلاندا (New Zealand)">
+                        <option class="ctopt" value="NZ,AKL">أوكلاند (Auckland)</option>
+                        <option class="ctopt" value="NZ,CHC">كرايستشيرش (Christchurch)</option>
+                        <option class="ctopt" value="NZ,ZQN">كوينزتاون (Queenstown)</option>
+                        <option class="ctopt" value="NZ,ROT">روتوروا (Rotorua)</option>
+                        <option class="ctopt" value="NZ,WLG">ويلينغتون (Wellington)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="PA" label="باناما (Panama)">
+                        <option class="ctopt" value="PA,PTY">مدينة باناما (Panama City (PA))</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="PH" label="الفيليبين (Philippines)">
+                        <option class="ctopt" value="PH,EUQ">أنتيك (Antique)</option>
+                        <option class="ctopt" value="PH,BCD">باكولود (Bacolod)</option>
+                        <option class="ctopt" value="PH,BAG">باغيو (Baguio)</option>
+                        <option class="ctopt" value="PH,BQA">بالير (Baler)</option>
+                        <option class="ctopt" value="PH,P31">باتان (Bataan)</option>
+                        <option class="ctopt" value="PH,PH2">باتانيس (Batanes)</option>
+                        <option class="ctopt" value="PH,PH3">باتانغاس (Batangas)</option>
+                        <option class="ctopt" value="PH,PH4">بوهول (Bohol)</option>
+                        <option class="ctopt" value="PH,PH5">بوراكاي (Boracay)</option>
+                        <option class="ctopt" value="PH,P42">بولاكان (Bulacan)</option>
+                        <option class="ctopt" value="PH,CGY">كاغايان دي أورو (Cagayan de Oro)</option>
+                        <option class="ctopt" value="PH,CYP">كالبايوغ (Calbayog)</option>
+                        <option class="ctopt" value="PH,PP3">كامارين الشمالية (Camarines Norte)</option>
+                        <option class="ctopt" value="PH,P43">كامارين الجنوبية (Camarines Sur)</option>
+                        <option class="ctopt" value="PH,CGM">كاميغوين (Camiguin)</option>
+                        <option class="ctopt" value="PH,CEB">سيبو (Cebu)</option>
+                        <option class="ctopt" value="PH,P75">وادي كومبوستيلا (Compostela Valley)</option>
+                        <option class="ctopt" value="PH,USU">كورون (Coron)</option>
+                        <option class="ctopt" value="PH,CBO">كوتاباتو (Cotabato)</option>
+                        <option class="ctopt" value="PH,DVO">دافاو (Davao)</option>
+                        <option class="ctopt" value="PH,DGT">دوماغويتي (Dumaguete)</option>
+                        <option class="ctopt" value="PH,GES">جينيرال سانتوس (General Santos)</option>
+                        <option class="ctopt" value="PH,P10">ايلوكوس الشمالية (Ilocos Norte)</option>
+                        <option class="ctopt" value="PH,P11">ايلوكوس الجنوبية (Ilocos Sur)</option>
+                        <option class="ctopt" value="PH,ILO">ايوليو (Iloilo)</option>
+                        <option class="ctopt" value="PH,P45">أيزابيلا (Isabela)</option>
+                        <option class="ctopt" value="PH,P76">كالينغا (Kalinga)</option>
+                        <option class="ctopt" value="PH,PH9">لا أونيون (La Union)</option>
+                        <option class="ctopt" value="PH,LAG">لاغونا (Laguna)</option>
+                        <option class="ctopt" value="PH,LAO">لاواغ (Laoag)</option>
+                        <option class="ctopt" value="PH,LGP">ليغازبي (Legazpi)</option>
+                        <option class="ctopt" value="PH,MNL">مانيلا (Manila)</option>
+                        <option class="ctopt" value="PH,MRQ">ماريندوك (Marinduque)</option>
+                        <option class="ctopt" value="PH,P54">ميندورو (Mindoro)</option>
+                        <option class="ctopt" value="PH,WNP">ناغا (Naga)</option>
+                        <option class="ctopt" value="PH,P57">نيغروس الغربية (Negros Occidental)</option>
+                        <option class="ctopt" value="PH,P17">بالاوان (Palawan)</option>
+                        <option class="ctopt" value="PH,P18">بامبانغا (Pampanga)</option>
+                        <option class="ctopt" value="PH,P19">بانغاسينان (Pangasinan)</option>
+                        <option class="ctopt" value="PH,P21">بويرتو غاليرا (Puerto Galera)</option>
+                        <option class="ctopt" value="PH,P65">كيزون (Quezon)</option>
+                        <option class="ctopt" value="PH,P66">كيرينو (Quirino)</option>
+                        <option class="ctopt" value="PH,P23">ريزال (Rizal)</option>
+                        <option class="ctopt" value="PH,TBH">رومبلون (Romblon)</option>
+                        <option class="ctopt" value="PH,P67">سامار (Samar)</option>
+                        <option class="ctopt" value="PH,P26">سيارغاو (Siargao)</option>
+                        <option class="ctopt" value="PH,SIQ">سيكيخور (Siquijor)</option>
+                        <option class="ctopt" value="PH,PP2">سورسوغون (Sorsogon)</option>
+                        <option class="ctopt" value="PH,SFS">سوبيك (Subic)</option>
+                        <option class="ctopt" value="PH,SUG">سوريغاو (Surigao)</option>
+                        <option class="ctopt" value="PH,TAC">تاكلوبان (Tacloban)</option>
+                        <option class="ctopt" value="PH,P32">تاغايتاي (Tagaytay)</option>
+                        <option class="ctopt" value="PH,P27">تارلاك (Tarlac)</option>
+                        <option class="ctopt" value="PH,TUG">توغويغاراو (Tuguegarao)</option>
+                        <option class="ctopt" value="PH,VRC">فيراك (Virac)</option>
+                        <option class="ctopt" value="PH,ZAM">زامبوانغا (Zamboanga)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="PL" label="بولاندا (Poland)">
+                        <option class="ctopt" value="PL,KRK">كراكاو (Krakow)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="PT" label="البرتغال (Portugal)">
+                        <option class="ctopt" value="PT,LIS">ليشبونا (Lisbon)</option>
+                        <option class="ctopt" value="PT,OPO">بورتو (Porto)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="PR" label="بويرتو ريكو (Puerto Rico)">
+                        <option class="ctopt" value="PR,SJU">سان خوان (San Juan (PR))</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="RU" label="الفيديرالية الروسية (Russian Federation)">
+                        <option class="ctopt" value="RU,MOW">موسكو (Moscow)</option>
+                        <option class="ctopt" value="RU,LED">سان بطرسبورغ (St Petersburg)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="SG" label="سينغافورة (Singapore)">
+                        <option class="ctopt" value="SG,SIN">سينغافورة (Singapore)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="ZA" label="جنوب أفريقيا (South Africa)">
+                        <option class="ctopt" value="ZA,CPT">كايب تاون (Cape Town)</option>
+                        <option class="ctopt" value="ZA,JNB">جوهانسبورغ (Johannesburg)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="ES" label="اسبانيا (Spain)">
+                        <option class="ctopt" value="ES,BCN">برشلونة (Barcelona (ES))</option>
+                        <option class="ctopt" value="ES,GRX">غرناطة (Granada)</option>
+                        <option class="ctopt" value="ES,MAD">مدريد (Madrid)</option>
+                        <option class="ctopt" value="ES,AGP">ملقة (Malaga)</option>
+                        <option class="ctopt" value="ES,PMI">بالما مايوركا (Palma Mallorca)</option>
+                        <option class="ctopt" value="ES,SVQ">اشبيلية (Seville)</option>
+                        <option class="ctopt" value="ES,TCI">تينيريفي (Tenerife)</option>
+                        <option class="ctopt" value="ES,VLC">فالينسيا (Valencia (ES))</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="SE" label="السويد (Sweden)">
+                        <option class="ctopt" value="SE,STO">ستوكهولم (Stockholm)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="CH" label="سويسرا (Switzerland)">
+                        <option class="ctopt" value="CH,GVA">جينيف (Geneva)</option>
+                        <option class="ctopt" value="CH,ZRH">زوريخ (Zurich)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="TW" label="Taiwan (Taiwan)">
+                        <option class="ctopt" value="TW,TPE">تايبيي (Taipei)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="TH" label="تايلاندا (Thailand)">
+                        <option class="ctopt" value="TH,BKK">بانكوك (Bangkok)</option>
+                        <option class="ctopt" value="TH,CNX">تشيانغماي (Chiang Mai)</option>
+                        <option class="ctopt" value="TH,HDY">هات هاي (Hat Yai)</option>
+                        <option class="ctopt" value="TH,HHQ">هوا هين (Hua Hin)</option>
+                        <option class="ctopt" value="TH,TH7">كاو لاك (Khao Lak)</option>
+                        <option class="ctopt" value="TH,TH8">كاو ياي (Khao Yai)</option>
+                        <option class="ctopt" value="TH,USM">كوه ساموي (Koh Samui)</option>
+                        <option class="ctopt" value="TH,KBV">كرابي (Krabi)</option>
+                        <option class="ctopt" value="TH,PYX">باتايا (Pattaya)</option>
+                        <option class="ctopt" value="TH,HKT">بوكيت (Phuket)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="TR" label="تركيا (Turkey)">
+                        <option class="ctopt" value="TR,IST">اسطنبول (Istanbul)</option>
+                        <option class="ctopt" value="TR,IZM">ازمير (Izmir)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="AE" label="الامارات العربية المتحدة (United Arab Emirates)">
+                        <option class="ctopt" value="AE,AUH">أبوظبي (Abu Dhabi)</option>
+                        <option class="ctopt" value="AE,FJR">الفجيرة (Al-Fujairah)</option>
+                        <option class="ctopt" value="AE,DXB">دبي (Dubai)</option>
+                        <option class="ctopt" value="AE,RKT">رأس الخيمة (Ras al Khaimah)</option>
+                        <option class="ctopt" value="AE,SHJ">الشارقة (Sharjah)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="GB" label="المملكة المتحدة (United Kingdom)">
+                        <option class="ctopt" value="GB,EDI">ايدينبورغ (Edinburgh)</option>
+                        <option class="ctopt" value="GB,LON">لندن (London (GB))</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="US" label="الولايات المتحدة الاميركيو (United States)">
+                        <option class="ctopt" value="US,ANA">أناهيم (Anaheim)</option>
+                        <option class="ctopt" value="US,AUS">أوستن (Austin)</option>
+                        <option class="ctopt" value="US,BOS">بوسطن (Boston)</option>
+                        <option class="ctopt" value="US,CHI">شيكاغو (Chicago)</option>
+                        <option class="ctopt" value="US,DEN">دينفر (Denver)</option>
+                        <option class="ctopt" value="US,HNL">هونولولو (Honolulu)</option>
+                        <option class="ctopt" value="US,HOU">هيوستن (Houston)</option>
+                        <option class="ctopt" value="US,OGG">كاهولوي (Kahului)</option>
+                        <option class="ctopt" value="US,EYW">كيويست (Key West)</option>
+                        <option class="ctopt" value="US,KOA">كونا (Kona)</option>
+                        <option class="ctopt" value="US,LAS">لاس فيغاس (Las Vegas)</option>
+                        <option class="ctopt" value="US,LAX">لوس أنجيليس (Los Angeles)</option>
+                        <option class="ctopt" value="US,MIA">مايامي (Miami)</option>
+                        <option class="ctopt" value="US,MSY">نيو أورليانز (New Orleans)</option>
+                        <option class="ctopt" value="US,NYC">نيويورك (New York)</option>
+                        <option class="ctopt" value="US,ORL">أورلاندو (Orlando)</option>
+                        <option class="ctopt" value="US,PHL">فيلاديلفيا (Philadelphia)</option>
+                        <option class="ctopt" value="US,PHX">فينيكس (Phoenix)</option>
+                        <option class="ctopt" value="US,PDX">بورتلاند (Portland (US) OR)</option>
+                        <option class="ctopt" value="US,SAT">سان انطونيو (San Antonio (US))</option>
+                        <option class="ctopt" value="US,SAN">سان دييغو (San Diego)</option>
+                        <option class="ctopt" value="US,SFO">سان فرانسيسكو (San Francisco)</option>
+                        <option class="ctopt" value="US,SEA">سياتل (Seattle)</option>
+                        <option class="ctopt" value="US,TPA">تامبا (Tampa)</option>
+                        <option class="ctopt" value="US,WAS">واشنطن (Washington)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="VN" label="فييتنام (Vietnam)">
+                        <option class="ctopt" value="VN,DAD">دانانغ (Da Nang)</option>
+                        <option class="ctopt" value="VN,DLI">دالات (Dalat)</option>
+                        <option class="ctopt" value="VN,VN4">هالونغ (Halong)</option>
+                        <option class="ctopt" value="VN,HAN">هانوي (Hanoi)</option>
+                        <option class="ctopt" value="VN,SGN">مدينة هو شي مينه (Ho Chi Minh City)</option>
+                        <option class="ctopt" value="VN,VN5">هوي أن (Hoi An)</option>
+                        <option class="ctopt" value="VN,HUI">هوي (Hue)</option>
+                        <option class="ctopt" value="VN,NHA">نها ترانغ (Nha Trang)</option>
+                        <option class="ctopt" value="VN,VN6">بان ثييت (Phan Thiet)</option>
+                        <option class="ctopt" value="VN,PQC">بهوكوك Phuquoc)</option>
+                        </optgroup>
+                        
+                        </select>
+                  
+                     </div>
+                    
+                   </div>
+                    
+                    <div class="col-lg-12 col-md-12 col-xs-12">
+                        <button type="button" class="btn btn-info btn-style"><i class="fa fa-search lg"></i> بحث</button>
+                    
+                    </div>
+                    
+                </form>
+               </div>
+             </div>
+             <!--Package Section-->
+             <div class="tab-pane fade in" id="menu4">
+                
+                    <!--package Menu-->
+                <ul class="nav nav-tabs" >
+                    <li class="active"><a href="#flighthotel-tab" data-toggle="tab">طيران+فندق+جولات</a></li>
+                    <li><a href="#flight-tab" data-toggle="tab">طيران+فندق</a></li>
+                    <li><a href="#hoteltour-tab" data-toggle="tab">فندق +جولات</a></li>
+                </ul>
+                
+                
+            <div class="tab-content">
+            
+            <!--Flight Hotel Tour-tab--->
+               <div class="tab-pane active fade in" id="flighthotel-tab" >
+               <form role="form">      
+                     <div class="row" style="margin-top: 20px;">
+                             <div class="col-lg-6 col-md-6 col-xs-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="مدينة الانطلاق" />
+                                </div>
+                             </div>
+                             
+                             <div class="col-lg-6 col-md-6 col-xs-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control"  placeholder="مدينة الوصول" />
+                                </div>
+                             </div>
+                             
+                             <div class="col-lg-6 col-md-6 col-xs-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control Datepicker"  placeholder="تاريخ الانطلاق" />
+                                </div>
+                             </div>
+                             
+                             <div class="col-lg-6 col-md-6 col-xs-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control Datepicker"  placeholder="تاريخ الوصول" />
+                                </div>
+                             </div>
+                             
+                             
+                             <div class="col-lg-12 col-md-12 col-xs-12">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading"><p class="htl-room">تفاصيل الغرفة</p></div>
+                                    <div class="panel-body">
+                                        <div class="row">
+                                                <div class="col-lg-3 col-md-3 col-xs-3">
+                                                    <h4 class="option-size">غرف</h4>
+                                                        <div class="form-group">
+                                                            <select class="form-control">
+                                                                <option>1</option>
+                                                                <option>2</option>
+                                                                <option>3</option>
+                                                                <option>4</option>
+                                                                <option>5</option>
+                                                            </select>
+                                                        </div>
+                                                </div> 
+                                                
+                                                <div class="col-lg-3 col-md-3 col-xs-3">
+                                                    <h4 class="option-size">بالغ</h4>
+                                                        <div class="form-group">
+                                                            <select class="form-control">
+                                                                <option>1</option>
+                                                                <option>2</option>
+                                                                <option>3</option>
+                                                                <option>4</option>
+                                                                <option>5</option>
+                                                            </select>
+                                                        </div>
+                                                </div>
+                                                
+                                                <div class="col-lg-4 col-md-4 col-xs-4">
+                                                    <h4 class="option-size">قاصر (٢-١١ سنة)</h4>
+                                                        <div class="form-group">
+                                                            <select class="form-control" id="withBed">
+                                                                <option value="0">0 - مع سرير</option>
+                                                                <option value="1">1 - مع سرير</option>
+                                                               
+                                                            </select>
+                                                       
+                                                            <select class="form-control" id="withoutBed">
+                                                                <option value="0">0 - بدون سرير</option>
+                                                                <option value="1">1 - بدون سرير</option>
+                                                               
+                                                            </select>
+                                                        </div>
+                                                </div>
+                                                 
+                                                <div class="col-lg-2 col-md-2 col-xs-2">
+                                                
+                                                    <h4 class="option-size">العمر</h4>
+                                                        <div class="form-group">
+                                                            <input type="text" id="withBedAge" disabled="" class="form-control" />
+                                                            <input type="text" id="withoutBedAge" disabled="" class="form-control" />
+                                                        </div>
+                                                    
+                                                
+                                                
+                                                </div>
+                                                
+                                                <div class="col-lg-12 col-md-12 col-xs-12">    
+                                                    <button type="button" class="btn btn-info btn-style"><i class="fa fa-search lg"></i>بحث</button>
+                                                </div>
+                                        </div>
+                                    </div>
+                                
+                                </div>
+                             </div>
+                     </div>
+              </form> 
+              </div> 
+            <!--Flight + tab---> 
+                <div class="tab-pane fade in" id="flight-tab" >
+               <form role="form">      
+                     <div class="row" style="margin-top: 20px;">
+                             <div class="col-lg-6 col-md-6 col-xs-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="مدينة الانطلاق" />
+                                </div>
+                             </div>
+                             
+                             <div class="col-lg-6 col-md-6 col-xs-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control"  placeholder="مدينة الوصول" />
+                                </div>
+                             </div>
+                             
+                             <div class="col-lg-6 col-md-6 col-xs-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control Datepicker"  placeholder="تاريخ الانطلاق" />
+                                </div>
+                             </div>
+                             
+                             <div class="col-lg-6 col-md-6 col-xs-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control Datepicker"  placeholder="تاريخ الوصول" />
+                                </div>
+                             </div>
+                             
+                             
+                             <div class="col-lg-12 col-md-12 col-xs-12">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading"><p class="htl-room">تفاصيل الغرفة</p></div>
+                                    <div class="panel-body">
+                                        <div class="row">
+                                                <div class="col-lg-3 col-md-3 col-xs-3">
+                                                    <h4 class="option-size">غرف</h4>
+                                                        <div class="form-group">
+                                                            <select class="form-control">
+                                                                <option>1</option>
+                                                                <option>2</option>
+                                                                <option>3</option>
+                                                                <option>4</option>
+                                                                <option>5</option>
+                                                            </select>
+                                                        </div>
+                                                </div> 
+                                                
+                                                <div class="col-lg-3 col-md-3 col-xs-3">
+                                                    <h4 class="option-size">بالغ</h4>
+                                                        <div class="form-group">
+                                                            <select class="form-control">
+                                                                <option>1</option>
+                                                                <option>2</option>
+                                                                <option>3</option>
+                                                                <option>4</option>
+                                                                <option>5</option>
+                                                            </select>
+                                                        </div>
+                                                </div>
+                                                
+                                                  <div class="col-lg-4 col-md-4 col-xs-4">
+                                                    <h4 class="option-size">قاصر (٢-١١ سنة)</h4>
+                                                        <div class="form-group">
+                                                            <select class="form-control" id="fwithBed">
+                                                                <option value="0">0 - مع سرير</option>
+                                                                <option value="1">1 - مع سرير</option>
+                                                               
+                                                            </select>
+                                                       
+                                                            <select class="form-control" id="fwithoutBed">
+                                                                <option value="0">0 - بدون سرير</option>
+                                                                <option value="1">1 - بدون سرير</option>
+                                                               
+                                                            </select>
+                                                        </div>
+                                                </div>
+                                                 
+                                                <div class="col-lg-2 col-md-2 col-xs-2">
+                                                
+                                                    <h4 class="option-size">Age</h4>
+                                                        <div class="form-group">
+                                                            <input type="text" id="fwithBedAge" disabled="" class="form-control" />
+                                                            <input type="text" id="fwithoutBedAge" disabled="" class="form-control" />
+                                                        </div>
+                                                    
+                                                
+                                                
+                                                </div>
+                                                
+                                                <div class="col-lg-12 col-md-12 col-xs-12">    
+                                                    <button type="button" class="btn btn-info btn-style"><i class="fa fa-search lg"></i>بحث</button>
+                                                </div>
+                                        </div>
+                                    </div>
+                                
+                                </div>
+                             </div>
+                     </div>
+              </form> 
+              </div>  
+             <!--Hotel Tour-tab--->
+                 <div class="tab-pane fade in" id="hoteltour-tab" >
+               <form role="form">
+                  <h4 class="option-size"  style="margin-top: 15px;">Destination</h4>
+                  <div class="row">
+                  
+                  
+                   <div class="col-lg-12 col-md-12 col-xs-12">
+                    <div class="form-group">
+                        <select class="form-control" id="inputTourKeyword">
+                        <option value="0">اختيار الوجهة</option>
+                        
+                        <optgroup class="cnopt" name="AR" label="الارجنتين (Argentina)">
+                            <option class="ctopt" value="AR,BUE">بوينوس ايريس (Buenos Aires)</option>
+                            <option class="ctopt" value="AR,FTE">ال كالافات (El Calafate)</option>
+                            <option class="ctopt" value="AR,USH">أوشويا (Ushuaia)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="AU" label="أستراليا (Australia)">
+                            <option class="ctopt" value="AU,ADL">أديلاييد (Adelaide)</option>
+                            <option class="ctopt" value="AU,BNE">بريسباين (Brisbane)</option>
+                            <option class="ctopt" value="AU,MEL">ميلبورن (Melbourne (AU))</option>
+                            <option class="ctopt" value="AU,PER">بيرث (Perth)</option>
+                            <option class="ctopt" value="AU,SYD">سيدني (Sydney (AU))</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="AT" label="النمسا (Austria)">
+                            <option class="ctopt" value="AT,SZG">سالزبورغ (Salzburg)</option>
+                            <option class="ctopt" value="AT,VIE">فيينا (Vienna)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="BB" label="باربادوس (Barbados)">
+                            <option class="ctopt" value="BB,BGI">باربادوس (Barbados)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="BE" label="بيلجيكا (Belgium)">
+                        <option class="ctopt" value="BE,BRU">بروكسيل (Brussels)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="BR" label="البرازيل (Brazil)">
+                        <option class="ctopt" value="BR,MAO">ماناوس (Manaus)</option>
+                        <option class="ctopt" value="BR,RIO">ريو دي جينيرو (Rio de Janeiro)</option>
+                        <option class="ctopt" value="BR,SSA">سالفادور (Salvador)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="BN" label="بروناي دار السلام">
+                        <option class="ctopt" value="BN,BWN">بروناي (Brunei)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="KH" label="كامبوديا (Cambodia)">
+                        <option class="ctopt" value="KH,PNH">بنوم بينه (Phnom Penh)</option>
+                        <option class="ctopt" value="KH,REP">سييم ريب (Siem Reap)</option>
+                        <option class="ctopt" value="KH,KOS">سيهانوكفيل (Sihanoukville)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="CA" label="كندا (Canada)">
+                        <option class="ctopt" value="CA,YYC">كالغلري (Calgary)</option>
+                        <option class="ctopt" value="CA,YHZ">هاليفاكس (Halifax)</option>
+                        <option class="ctopt" value="CA,YMQ">مونتريال (Montreal)</option>
+                        <option class="ctopt" value="CA,NIA">شلالات نياغارا (Niagara Falls)</option>
+                        <option class="ctopt" value="CA,YQB">كيبيك (Quebec)</option>
+                        <option class="ctopt" value="CA,YVR">فانكوفر (Vancouver)</option>
+                        <option class="ctopt" value="CA,YYJ">فيكتوريا (Victoria (CA))</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="KY" label="جزر كايمان (Cayman Islands)">
+                        <option class="ctopt" value="KY,GCM">جزيرة كايمان الكبرى (Grand Cayman Island)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="CN" label="الصين (China)">
+                        <option class="ctopt" value="CN,BJS">بيكين (Beijing)</option>
+                        <option class="ctopt" value="CN,CAN">هوانغزهود (Guangzhou)</option>
+                        <option class="ctopt" value="CN,KWL">غويلين (Guilin)</option>
+                        <option class="ctopt" value="CN,SHA">شانغهاي (Shanghai)</option>
+                        <option class="ctopt" value="CN,SIA">كسي ان (Xi An)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="HR" label="كرواتيا (Croatia)">
+                        <option class="ctopt" value="HR,DBV">دوبروفنيك (Dubrovnik)</option>
+                        <option class="ctopt" value="HR,SPU">سبليت (Split)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="CZ" label="جمهورية التشيك (Czech Republic)">
+                        <option class="ctopt" value="CZ,PRG">براغ (Prague)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="DK" label="الدنمارك (Denmark)">
+                        <option class="ctopt" value="DK,CPH">كوبينهاغن (Copenhagen)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="DO" label="جمهورية الدومينيكان (Dominican Republic)">
+                        <option class="ctopt" value="DO,LRM">لا رومانا (La Romana)</option>
+                        <option class="ctopt" value="DO,POP">بويرتو بلاتا (Puerto Plata)</option>
+                        <option class="ctopt" value="DO,PUJ">بونتا كانا (Punta Cana)</option>
+                        <option class="ctopt" value="DO,SDQ">سانتو دومينغو (Santo Domingo (DO))</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="FR" label="فرنسا (France)">
+                        <option class="ctopt" value="FR,AVN">أفينيون (Avignon)</option>
+                        <option class="ctopt" value="FR,BOD">بوردو (Bordeaux)</option>
+                        <option class="ctopt" value="FR,MRS">مارسيليا (Marseille)</option>
+                        <option class="ctopt" value="FR,NCE">نيس (Nice)</option>
+                        <option class="ctopt" value="FR,PAR">باريس (Paris)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="DE" label="المانيا (Germany)">
+                        <option class="ctopt" value="DE,BER">بيرلين (Berlin)</option>
+                        <option class="ctopt" value="DE,FRA">فرانكفورت (Frankfurt)</option>
+                        <option class="ctopt" value="DE,MUC">ميونيخ (Munich)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="GR" label="اليونان (Greece)">
+                        <option class="ctopt" value="GR,ATH">اتينا (Athens (GR))</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="HK" label="هونكونغ-الصين (Hong Kong (sar) China)">
+                        <option class="ctopt" value="HK,HKG">هونكونغ (Hong Kong)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="HU" label="هنغاريا (Hungary)">
+                        <option class="ctopt" value="HU,BUD">بودابيست (Budapest)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="IS" label="ايكاند (Iceland)">
+                        <option class="ctopt" value="IS,REK">ريكجافيتش (Reykjavik)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="IN" label="الهند (India)">
+                        <option class="ctopt" value="IN,AGR">أغرا (Agra)</option>
+                        <option class="ctopt" value="IN,AMD">أحمد أباد (Ahmedabad)</option>
+                        <option class="ctopt" value="IN,BLR">بانغالور (Bangalore)</option>
+                        <option class="ctopt" value="IN,MAA">تشيناي (Chennai)</option>
+                        <option class="ctopt" value="IN,GOI">غوا (Goa)</option>
+                        <option class="ctopt" value="IN,HYD">حيدر أباد (Hyderabad)</option>
+                        <option class="ctopt" value="IN,JAI">جايبور (Jaipur)</option>
+                        <option class="ctopt" value="IN,COK">كوتشي (Kochi (IN))</option>
+                        <option class="ctopt" value="IN,CCU">كولكاتا (Kolkata)</option>
+                        <option class="ctopt" value="IN,BOM">مومباي (Mumbai)</option>
+                        <option class="ctopt" value="IN,DEL">نيو دلهي (New Delhi)</option>
+                        <option class="ctopt" value="IN,TRV">تيروفانانتابورام (Thiruvananthapuram)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="ID" label="اندونيسيا (Indonesia)">
+                        <option class="ctopt" value="ID,BDO">باندونغ (Bandung)</option>
+                        <option class="ctopt" value="ID,BTH">باتام (Batam)</option>
+                        <option class="ctopt" value="ID,ID6">بينتان (Bintan)</option>
+                        <option class="ctopt" value="ID,DPS">دينباسار بالي (Denpasar Bali)</option>
+                        <option class="ctopt" value="ID,JKT">جاكارتا (Jakarta)</option>
+                        <option class="ctopt" value="ID,LOP">لومبوك (Lombok(Mataram))</option>
+                        <option class="ctopt" value="ID,MLG">مالانغ (Malang)</option>
+                        <option class="ctopt" value="ID,SUB">سورابايا (Surabaya)</option>
+                        <option class="ctopt" value="ID,JOG">يوغياغارتا (Yogyakarta)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="IE" label="الجمهورية الايرلاندية (Ireland Republic of)">
+                        <option class="ctopt" value="IE,DUB">دبلين (Dublin)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="IL" label="اسرائيل (Israel)">
+                        <option class="ctopt" value="IL,TLV">تل ابيب (Tel Aviv)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="IT" label="ايطاليا (Italy)">
+                        <option class="ctopt" value="IT,FLR">فلورانس (Florence (IT))</option>
+                        <option class="ctopt" value="IT,MIL">ميلانو (Milan)</option>
+                        <option class="ctopt" value="IT,NAP">نابولي (Naples (IT))</option>
+                        <option class="ctopt" value="IT,ROM">روما (Rome)</option>
+                        <option class="ctopt" value="IT,VCE">فينيسيا (Venice)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="JP" label="اليابان (Japan)">
+                        <option class="ctopt" value="JP,UKY">كيوتو (Kyoto)</option>
+                        <option class="ctopt" value="JP,TYO">طوكيو (Tokyo)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="KR" label="شعب لاو (Korea (South))">
+                        <option class="ctopt" value="KR,SEL">سيول (Seoul)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="LA" label="شعب لاو (Lao People)" democratic="" republic="">
+                        <option class="ctopt" value="LA,LPQ">لوانغ بارابانغ (Luang Prabang)</option>
+                        <option class="ctopt" value="LA,VTE">فيينتيان (Vientiane)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="MO" label="ماكاو الصين (Macao (sar) China)">
+                        <option class="ctopt" value="MO,MFM">ماكاو (Macau)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="MY" label="ماليزيا (Malaysia)">
+                        <option class="ctopt" value="MY,IPH">ايبوه (Ipoh)</option>
+                        <option class="ctopt" value="MY,JHB">جوهور باهرو (Johor Bahru)</option>
+                        <option class="ctopt" value="MY,BKI">كوتا كينابالو (Kota Kinabalu)</option>
+                        <option class="ctopt" value="MY,KUL">كوالالامبور (Kuala Lumpur)</option>
+                        <option class="ctopt" value="MY,KCH">كوتشينغ (Kuching)</option>
+                        <option class="ctopt" value="MY,LGK">لانغكاوي (Langkawi)</option>
+                        <option class="ctopt" value="MY,PEN">بيناناغ (Penang)</option>
+                        <option class="ctopt" value="MY,SDK">سانداكان (Sandakan)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="MX" label="ميكسيكو (Mexico)">
+                        <option class="ctopt" value="MX,CUN">كانكون (Cancun)</option>
+                        <option class="ctopt" value="MX,CZM">كوزوميل (Cozumel)</option>
+                        <option class="ctopt" value="MX,MEX">مدينة ميكسيكو (Mexico City)</option>
+                        <option class="ctopt" value="MX,PVR">بويرتو فالارتا (Puerto Vallarta)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="MC" label="موناكو (Monaco)">
+                        <option class="ctopt" value="MC,MCM">مونتي كارلو (Monte Carlo)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="MA" label="المغرب (Morocco)">
+                        <option class="ctopt" value="MA,RAK">مراكش (Marrakech)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="MM" label="ميانمار (Myanmar)">
+                        <option class="ctopt" value="MM,BPE">باغان (Bagan)</option>
+                        <option class="ctopt" value="MM,MM7">بحيرة مينشوانغ (Inle Lake)</option>
+                        <option class="ctopt" value="MM,MDL">ماندالاي (Mandalay)</option>
+                        <option class="ctopt" value="MM,MM4">نيوانغ شوي (Nyaung Shwe)</option>
+                        <option class="ctopt" value="MM,RGN">يانغون (Yangon)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="NP" label="النيبال (Nepal)">
+                        <option class="ctopt" value="NP,KTM">كاتماندو (Kathmandu)</option>
+                        <option class="ctopt" value="NP,PKR">بوكارا (Pokhara)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="NL" label="هولاندا (Netherlands)">
+                        <option class="ctopt" value="NL,AMS">أمستردام (Amsterdam)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="NZ" label="نيوزيلاندا (New Zealand)">
+                        <option class="ctopt" value="NZ,AKL">أوكلاند (Auckland)</option>
+                        <option class="ctopt" value="NZ,CHC">كرايستشيرش (Christchurch)</option>
+                        <option class="ctopt" value="NZ,ZQN">كوينزتاون (Queenstown)</option>
+                        <option class="ctopt" value="NZ,ROT">روتوروا (Rotorua)</option>
+                        <option class="ctopt" value="NZ,WLG">ويلينغتون (Wellington)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="PA" label="باناما (Panama)">
+                        <option class="ctopt" value="PA,PTY">مدينة باناما (Panama City (PA))</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="PH" label="الفيليبين (Philippines)">
+                        <option class="ctopt" value="PH,EUQ">أنتيك (Antique)</option>
+                        <option class="ctopt" value="PH,BCD">باكولود (Bacolod)</option>
+                        <option class="ctopt" value="PH,BAG">باغيو (Baguio)</option>
+                        <option class="ctopt" value="PH,BQA">بالير (Baler)</option>
+                        <option class="ctopt" value="PH,P31">باتان (Bataan)</option>
+                        <option class="ctopt" value="PH,PH2">باتانيس (Batanes)</option>
+                        <option class="ctopt" value="PH,PH3">باتانغاس (Batangas)</option>
+                        <option class="ctopt" value="PH,PH4">بوهول (Bohol)</option>
+                        <option class="ctopt" value="PH,PH5">بوراكاي (Boracay)</option>
+                        <option class="ctopt" value="PH,P42">بولاكان (Bulacan)</option>
+                        <option class="ctopt" value="PH,CGY">كاغايان دي أورو (Cagayan de Oro)</option>
+                        <option class="ctopt" value="PH,CYP">كالبايوغ (Calbayog)</option>
+                        <option class="ctopt" value="PH,PP3">كامارين الشمالية (Camarines Norte)</option>
+                        <option class="ctopt" value="PH,P43">كامارين الجنوبية (Camarines Sur)</option>
+                        <option class="ctopt" value="PH,CGM">كاميغوين (Camiguin)</option>
+                        <option class="ctopt" value="PH,CEB">سيبو (Cebu)</option>
+                        <option class="ctopt" value="PH,P75">وادي كومبوستيلا (Compostela Valley)</option>
+                        <option class="ctopt" value="PH,USU">كورون (Coron)</option>
+                        <option class="ctopt" value="PH,CBO">كوتاباتو (Cotabato)</option>
+                        <option class="ctopt" value="PH,DVO">دافاو (Davao)</option>
+                        <option class="ctopt" value="PH,DGT">دوماغويتي (Dumaguete)</option>
+                        <option class="ctopt" value="PH,GES">جينيرال سانتوس (General Santos)</option>
+                        <option class="ctopt" value="PH,P10">ايلوكوس الشمالية (Ilocos Norte)</option>
+                        <option class="ctopt" value="PH,P11">ايلوكوس الجنوبية (Ilocos Sur)</option>
+                        <option class="ctopt" value="PH,ILO">ايوليو (Iloilo)</option>
+                        <option class="ctopt" value="PH,P45">أيزابيلا (Isabela)</option>
+                        <option class="ctopt" value="PH,P76">كالينغا (Kalinga)</option>
+                        <option class="ctopt" value="PH,PH9">لا أونيون (La Union)</option>
+                        <option class="ctopt" value="PH,LAG">لاغونا (Laguna)</option>
+                        <option class="ctopt" value="PH,LAO">لاواغ (Laoag)</option>
+                        <option class="ctopt" value="PH,LGP">ليغازبي (Legazpi)</option>
+                        <option class="ctopt" value="PH,MNL">مانيلا (Manila)</option>
+                        <option class="ctopt" value="PH,MRQ">ماريندوك (Marinduque)</option>
+                        <option class="ctopt" value="PH,P54">ميندورو (Mindoro)</option>
+                        <option class="ctopt" value="PH,WNP">ناغا (Naga)</option>
+                        <option class="ctopt" value="PH,P57">نيغروس الغربية (Negros Occidental)</option>
+                        <option class="ctopt" value="PH,P17">بالاوان (Palawan)</option>
+                        <option class="ctopt" value="PH,P18">بامبانغا (Pampanga)</option>
+                        <option class="ctopt" value="PH,P19">بانغاسينان (Pangasinan)</option>
+                        <option class="ctopt" value="PH,P21">بويرتو غاليرا (Puerto Galera)</option>
+                        <option class="ctopt" value="PH,P65">كيزون (Quezon)</option>
+                        <option class="ctopt" value="PH,P66">كيرينو (Quirino)</option>
+                        <option class="ctopt" value="PH,P23">ريزال (Rizal)</option>
+                        <option class="ctopt" value="PH,TBH">رومبلون (Romblon)</option>
+                        <option class="ctopt" value="PH,P67">سامار (Samar)</option>
+                        <option class="ctopt" value="PH,P26">سيارغاو (Siargao)</option>
+                        <option class="ctopt" value="PH,SIQ">سيكيخور (Siquijor)</option>
+                        <option class="ctopt" value="PH,PP2">سورسوغون (Sorsogon)</option>
+                        <option class="ctopt" value="PH,SFS">سوبيك (Subic)</option>
+                        <option class="ctopt" value="PH,SUG">سوريغاو (Surigao)</option>
+                        <option class="ctopt" value="PH,TAC">تاكلوبان (Tacloban)</option>
+                        <option class="ctopt" value="PH,P32">تاغايتاي (Tagaytay)</option>
+                        <option class="ctopt" value="PH,P27">تارلاك (Tarlac)</option>
+                        <option class="ctopt" value="PH,TUG">توغويغاراو (Tuguegarao)</option>
+                        <option class="ctopt" value="PH,VRC">فيراك (Virac)</option>
+                        <option class="ctopt" value="PH,ZAM">زامبوانغا (Zamboanga)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="PL" label="بولاندا (Poland)">
+                        <option class="ctopt" value="PL,KRK">كراكاو (Krakow)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="PT" label="البرتغال (Portugal)">
+                        <option class="ctopt" value="PT,LIS">ليشبونا (Lisbon)</option>
+                        <option class="ctopt" value="PT,OPO">بورتو (Porto)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="PR" label="بويرتو ريكو (Puerto Rico)">
+                        <option class="ctopt" value="PR,SJU">سان خوان (San Juan (PR))</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="RU" label="الفيديرالية الروسية (Russian Federation)">
+                        <option class="ctopt" value="RU,MOW">موسكو (Moscow)</option>
+                        <option class="ctopt" value="RU,LED">سان بطرسبورغ (St Petersburg)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="SG" label="سينغافورة (Singapore)">
+                        <option class="ctopt" value="SG,SIN">سينغافورة (Singapore)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="ZA" label="جنوب أفريقيا (South Africa)">
+                        <option class="ctopt" value="ZA,CPT">كايب تاون (Cape Town)</option>
+                        <option class="ctopt" value="ZA,JNB">جوهانسبورغ (Johannesburg)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="ES" label="اسبانيا (Spain)">
+                        <option class="ctopt" value="ES,BCN">برشلونة (Barcelona (ES))</option>
+                        <option class="ctopt" value="ES,GRX">غرناطة (Granada)</option>
+                        <option class="ctopt" value="ES,MAD">مدريد (Madrid)</option>
+                        <option class="ctopt" value="ES,AGP">ملقة (Malaga)</option>
+                        <option class="ctopt" value="ES,PMI">بالما مايوركا (Palma Mallorca)</option>
+                        <option class="ctopt" value="ES,SVQ">اشبيلية (Seville)</option>
+                        <option class="ctopt" value="ES,TCI">تينيريفي (Tenerife)</option>
+                        <option class="ctopt" value="ES,VLC">فالينسيا (Valencia (ES))</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="SE" label="السويد (Sweden)">
+                        <option class="ctopt" value="SE,STO">ستوكهولم (Stockholm)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="CH" label="سويسرا (Switzerland)">
+                        <option class="ctopt" value="CH,GVA">جينيف (Geneva)</option>
+                        <option class="ctopt" value="CH,ZRH">زوريخ (Zurich)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="TW" label="Taiwan (Taiwan)">
+                        <option class="ctopt" value="TW,TPE">تايبيي (Taipei)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="TH" label="تايلاندا (Thailand)">
+                        <option class="ctopt" value="TH,BKK">بانكوك (Bangkok)</option>
+                        <option class="ctopt" value="TH,CNX">تشيانغماي (Chiang Mai)</option>
+                        <option class="ctopt" value="TH,HDY">هات هاي (Hat Yai)</option>
+                        <option class="ctopt" value="TH,HHQ">هوا هين (Hua Hin)</option>
+                        <option class="ctopt" value="TH,TH7">كاو لاك (Khao Lak)</option>
+                        <option class="ctopt" value="TH,TH8">كاو ياي (Khao Yai)</option>
+                        <option class="ctopt" value="TH,USM">كوه ساموي (Koh Samui)</option>
+                        <option class="ctopt" value="TH,KBV">كرابي (Krabi)</option>
+                        <option class="ctopt" value="TH,PYX">باتايا (Pattaya)</option>
+                        <option class="ctopt" value="TH,HKT">بوكيت (Phuket)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="TR" label="تركيا (Turkey)">
+                        <option class="ctopt" value="TR,IST">اسطنبول (Istanbul)</option>
+                        <option class="ctopt" value="TR,IZM">ازمير (Izmir)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="AE" label="الامارات العربية المتحدة (United Arab Emirates)">
+                        <option class="ctopt" value="AE,AUH">أبوظبي (Abu Dhabi)</option>
+                        <option class="ctopt" value="AE,FJR">الفجيرة (Al-Fujairah)</option>
+                        <option class="ctopt" value="AE,DXB">دبي (Dubai)</option>
+                        <option class="ctopt" value="AE,RKT">رأس الخيمة (Ras al Khaimah)</option>
+                        <option class="ctopt" value="AE,SHJ">الشارقة (Sharjah)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="GB" label="المملكة المتحدة (United Kingdom)">
+                        <option class="ctopt" value="GB,EDI">ايدينبورغ (Edinburgh)</option>
+                        <option class="ctopt" value="GB,LON">لندن (London (GB))</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="US" label="الولايات المتحدة الاميركيو (United States)">
+                        <option class="ctopt" value="US,ANA">أناهيم (Anaheim)</option>
+                        <option class="ctopt" value="US,AUS">أوستن (Austin)</option>
+                        <option class="ctopt" value="US,BOS">بوسطن (Boston)</option>
+                        <option class="ctopt" value="US,CHI">شيكاغو (Chicago)</option>
+                        <option class="ctopt" value="US,DEN">دينفر (Denver)</option>
+                        <option class="ctopt" value="US,HNL">هونولولو (Honolulu)</option>
+                        <option class="ctopt" value="US,HOU">هيوستن (Houston)</option>
+                        <option class="ctopt" value="US,OGG">كاهولوي (Kahului)</option>
+                        <option class="ctopt" value="US,EYW">كيويست (Key West)</option>
+                        <option class="ctopt" value="US,KOA">كونا (Kona)</option>
+                        <option class="ctopt" value="US,LAS">لاس فيغاس (Las Vegas)</option>
+                        <option class="ctopt" value="US,LAX">لوس أنجيليس (Los Angeles)</option>
+                        <option class="ctopt" value="US,MIA">مايامي (Miami)</option>
+                        <option class="ctopt" value="US,MSY">نيو أورليانز (New Orleans)</option>
+                        <option class="ctopt" value="US,NYC">نيويورك (New York)</option>
+                        <option class="ctopt" value="US,ORL">أورلاندو (Orlando)</option>
+                        <option class="ctopt" value="US,PHL">فيلاديلفيا (Philadelphia)</option>
+                        <option class="ctopt" value="US,PHX">فينيكس (Phoenix)</option>
+                        <option class="ctopt" value="US,PDX">بورتلاند (Portland (US) OR)</option>
+                        <option class="ctopt" value="US,SAT">سان انطونيو (San Antonio (US))</option>
+                        <option class="ctopt" value="US,SAN">سان دييغو (San Diego)</option>
+                        <option class="ctopt" value="US,SFO">سان فرانسيسكو (San Francisco)</option>
+                        <option class="ctopt" value="US,SEA">سياتل (Seattle)</option>
+                        <option class="ctopt" value="US,TPA">تامبا (Tampa)</option>
+                        <option class="ctopt" value="US,WAS">واشنطن (Washington)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="VN" label="فييتنام (Vietnam)">
+                        <option class="ctopt" value="VN,DAD">دانانغ (Da Nang)</option>
+                        <option class="ctopt" value="VN,DLI">دالات (Dalat)</option>
+                        <option class="ctopt" value="VN,VN4">هالونغ (Halong)</option>
+                        <option class="ctopt" value="VN,HAN">هانوي (Hanoi)</option>
+                        <option class="ctopt" value="VN,SGN">مدينة هو شي مينه (Ho Chi Minh City)</option>
+                        <option class="ctopt" value="VN,VN5">هوي أن (Hoi An)</option>
+                        <option class="ctopt" value="VN,HUI">هوي (Hue)</option>
+                        <option class="ctopt" value="VN,NHA">نها ترانغ (Nha Trang)</option>
+                        <option class="ctopt" value="VN,VN6">بان ثييت (Phan Thiet)</option>
+                        <option class="ctopt" value="VN,PQC">بهوكوك Phuquoc)</option>
+                        </optgroup>
+                        
+                        </select>
+                  
+                     </div>
+                    
+                   </div>
+                    
+                    <div class="col-lg-12 col-md-12 col-xs-12">
+                        <button type="button" class="btn btn-info btn-style"><i class="fa fa-search lg"></i> بحث</button>
+                    
+                    </div>
+                    
+                </form>
+               </div>
+             </div>
+                
+               
+            </div>    
+             
+             </div>              
+                   
+                
+                </div>
+            </div>
+      
+                
+           </div>      
+                
+            
+            </div>
+            <!--End of carousel-->
+ 
+
+</div>
+
+</div>
+
+<div class="kabayan-wrapper">
+      <div class="row">
+        
+        <div class="col-lg-12 col-md-12 col-xs-12">
+                <h3>Kabayan Stop Over Packages</h3>
+        </div>
+        </div>
+
+<div class="kabayan-stop-over">
+
+      <div class="row">
+        
+
+            
+                <div class="col-lg-6 col-md-6 col-xs-12" style="padding-bottom: 10px;">
+                
+                    <div class="row">
+                    
+                    
+                        <div class="col-lg-12 col-md-12 col-xs-12">
+                            <img src="images/kabayan-stop-over/banner.png"  class="img-responsive"  style="margin-bottom: 10px;width:100%" />
+                        </div>   
+                         <!--Hong Kong-->
+                        <div class="col-lg-6 col-md-6 col-xs-6" >
+                            <div class="ksop-destination" >
+                                
+                                <div class="col-lg-6 col-md-6 col-xs-6" >
+                                <h4>Hong Kong</h4> 
+                                </div>
+                                
+                                <div class="col-lg-6 col-md-6 col-xs-6" >
+                                
+                                    <p>Rate from<br /> <span class="text-red">AED 1,850++</span></p> 
+                                
+                                </div>
+                            </div>
+                                               
+                        
+                        </div>
+                        
+                        
+                         <!--Singapore-->
+                        <div class="col-lg-6 col-md-6 col-xs-6" >
+                            <div class="ksop-destination" >
+                            
+                                <div class="col-lg-6 col-md-6 col-xs-6" >
+                                <h4>Singapore</h4> 
+                                </div>
+                                
+                                <div class="col-lg-6 col-md-6 col-xs-6" >
+                                
+                                    <p>Rate from<br /> <span class="text-red">AED 2,745++</span></p> 
+                                
+                                </div>
+                            </div>
+                                               
+                        
+                        </div>
+                        
+                        
+                         <!--Bangkok-->
+                        <div class="col-lg-6 col-md-6 col-xs-6" >
+                            <div class="ksop-destination" >
+                            
+                                <div class="col-lg-6 col-md-6 col-xs-6" >
+                                <h4>Bangkok</h4> 
+                                </div>
+                                
+                                <div class="col-lg-6 col-md-6 col-xs-6" >
+                                
+                                    <p>Rate from<br /> <span class="text-red">AED 1,285++</span></p> 
+                                
+                                </div>
+                            </div>
+                                               
+                        
+                        </div>
+                      
+                        
+                        
+                         <!--Kuala Lumpur-->
+                        <div class="col-lg-6 col-md-6 col-xs-6" >
+                            <div class="ksop-destination" >
+                            
+                                <div class="col-lg-6 col-md-6 col-xs-6" >
+                                <h4>Kuala Lumpur</h4> 
+                                </div>
+                                
+                                <div class="col-lg-6 col-md-6 col-xs-6" >
+                                
+                                    <p>Rate from<br /> <span class="text-red">AED 2,640++</span></p> 
+                                
+                                </div>
+                            </div>
+                                               
+                        
+                        </div>
+                        
+                        <!--Inclusions-->
+                        <div class="col-lg-12 col-md-12 col-xs-12 inclusions">
+                                              
+                        
+                                                
+                       <div class="row">                                               
+                        <div class="col-lg-6 col-md-6 col-xs-6">
+                            
+                                
+                                    <h4 class="text-red">Inclusions</h4>
+                                        
+                                           <p><i class="fa fa-check text-success"></i> Roundtrip air ticket with stop over</p> 
+                                           <p><i class="fa fa-check text-success"></i> 2 nights hotel accomodation in stop over destination</p> 
+                                           <p><i class="fa fa-check text-success"></i> Roundtrip airport transfers</p> 
+                                           <p><i class="fa fa-check text-success"></i> Turn of your choice</p> 
+                                          
+                            
+                            
+                        </div> 
+                        
+                                                                        
+                        <!--Also Available-->
+                         <div class="col-lg-6 col-md-6 col-xs-6">
+                            
+                                
+                                    <h4 class="text-red">Also Available</h4>
+                                        
+                                           <p><i class="fa fa-check text-success"></i> Discounted rates for hotel extension nights</p> 
+                                           <p><i class="fa fa-check text-success"></i> Addional tours upon request</p> 
+                                           <p><i class="fa fa-check text-success"></i> 0% Installment plan up to 12 months</p> 
+                                           
+                                          
+                            
+                            
+                        </div> 
+                        
+                     
+                       
+                        
+                                
+                                    <!---
+                                        
+                                           <p>&bull; Final rate is dependent on actual travel date</p> 
+                                           <p>&bull; Rates are exclusive on taxes and service charge</p> 
+                                           
+                                           <p>&bull; Rates are per person</p> 
+                                           <p>&bull; Terms and condition apply</p> 
+                            -->
+                          <div class="clearfix"></div>
+                          
+                          <div class="first-half">
+                                           <p>&bull; Final rate is dependent on actual travel date</p> 
+                                           <p>&bull; Rates are exclusive on taxes and service charge</p> </div>
+                          <div class="second-half">
+                                           <p>&bull; Rates are per person</p> 
+                                           <p>&bull; Terms and condition apply</p> 
+                          </div>
+                            </div>
+                        </div>  
+                        
+                      
+                    </div>
+                    
+                    
+                </div>
+                
+                <div class="col-lg-6 col-md-6 col-xs-12">
+                <!--Kabayan Stop Over Hongkong-->
+                
+                  <div class="row">  
+                    <div class="col-lg-6 col-md-6 col-xs-6 kabayan-stop-over-package"> 
+                    
+                        <h4>SINGAPORE</h4>
+                        <img src="images/kabayan-stop-over/HongkongStopOver.jpg" class="img-responsive" style="width: 100%;"  />
+                        
+                        <p class="kabayan-stop-over-p">Rate from: <span class="kabayan-stop-over-package-price">AED 1,460++</span></p>    
+                        <div class="clearfix"></div>
+                        <p class="kabayan-stop-over-package-per-person"><span class="text-black"> PER PERSON</span></p>
+                    
+                    
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-xs-6 kabayan-stop-over-package"> 
+                    
+                        <h4>KUALA LUMPUR</h4>
+                        <img src="images/kabayan-stop-over/KualaLumpurStopOver.jpg" class="img-responsive" style="width: 100%;"  />
+                        
+                        <p class="kabayan-stop-over-p">Rate from: <span class="kabayan-stop-over-package-price">AED 2,750++</span></p>    
+                        <div class="clearfix"></div>
+                        <p class="kabayan-stop-over-package-per-person"><span class="text-black"> PER PERSON</span></p>
+                    
+                    
+                    </div>
+                    
+                    
+                    <div class="col-lg-6 col-md-6 col-xs-6 kabayan-stop-over-package"> 
+                    
+                        <h4>BANGKOK</h4>
+                        <img src="images/kabayan-stop-over/BangkokStopOver.jpg" class="img-responsive" style="width: 100%;"  />
+                        
+                        <p class="kabayan-stop-over-p">Rate from: <span class="kabayan-stop-over-package-price">AED 1,355++</span></p>    
+                        <div class="clearfix"></div>
+                        <p class="kabayan-stop-over-package-per-person"><span class="text-black"> PER PERSON</span></p>
+                    
+                    
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-xs-6 kabayan-stop-over-package"> 
+                    
+                        <h4>HONG KONG</h4>
+                        <img src="images/kabayan-stop-over/HongkongStopOver.jpg" class="img-responsive" style="width: 100%;"  />
+                        
+                        <p class="kabayan-stop-over-p">Rate from: <span class="kabayan-stop-over-package-price">AED 2,965++</span></p>    
+                        <div class="clearfix"></div>
+                        <p class="kabayan-stop-over-package-per-person"><span class="text-black"> PER PERSON</span></p>
+                    
+                    
+                    </div>
+                </div>
+                </div><!--End of collumn 2-->
+     </div>
+     
+     
+     
+     
+
+     
+</div>
+</div>
+
+
+     <div class="kabayan-stop-over">
+            
+            <div class="row">
+               <div class="location">
+                    <div class="col-lg-6 col-md-6 col-xs-12">
+                        <h4>اسياترافل.كوم-مكتب دبي</h4>
+                        <h4><small>اسيا ميدل ايست تورز اند ترافل. ذ.م.م</small></h4>
+                        <p>الشقة رقم ٧٠١, بناية الزرعوني, شارع الرقة, الديرة ض.ب ١١٢٧٥٨ دبي, الامارات العربية المتحدة</p>
+                            
+                            <p>رقم الهاتف: (+٩٧١ ٤) ٢٥٠٢٢٥٠</p>
+                            <p>رقم الفاكس: (+٩٧١ ٤) ٢٥٠٢٢٥٢</p>
+                    </div>
+               </div>
+               
+               <div class="subscribe">
+                    <div class="col-lg-6 col-md-6 col-xs-12">
+                        
+<div class="row">
+
+                <div class="col-lg-12 col-md-12 col-xs-12" >
+                         <h4 class="">الحسومات و العروضات الخاصة</h4>
+                </div>
+                
+           
+                <div class="col-lg-12 col-md-12 col-xs-12 subscribe-wrapper" style="padding-top: 20px;">
+                
+                        <p>الحصول على كل جديد من اسيا ترافل خاصة العروضات الخاصة, افضل الفنادق, الجولات و الرزم</p>
+                
+                </div>
+                <form role="form">
+                
+                    <div class="form-group">
+                    
+                    <div class="col-lg-8 col-md-8 col-xs-8 subscribe-wrapper" style="padding-bottom: 20px;">
+                         <input type="text" class="form-control" placeholder="عنوان بريدك الالكتروني سجل الان" />
+                    
+                    </div>
+                    </div>
+                    
+                    <div class="form-group">
+                    <div class="col-lg-4 col-md-4 col-xs-4 subscribe-wrapper" style="padding-bottom: 20px;">   
+                    
+                        <button type="button" class="btn btn-danger form-control">ادخل</button>
+                    
+                    </div>
+                    </div>
+                
+                </form>
+             
+</div>   
+                    
+                    
+               </div>
+            </div>
+            <div class="clearfix"></div>
+    <footer class="footer">       
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <p> <a href="#">About Asiatravel</a> | <a href="#">Subscribe to our travel agency</a> | <a href="#">Subscribe to our partner hotels</a> | 
+                <a href="#">Privacy Policy</a> </p>
+            
+            </div>
+            
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                
+                <h4><small>Copyright @ 2016 AT Reservation Network Pte Ltd. All rights reserved. <br />
+"Asiatravel" and "Global Reach, Local Touch" are trademarks of AT Reservation Network Pte Ltd.</small></h4>
+                                
+            </div>                        
+            
+    </footer>          
+            
+     </div>
+     </div>
+
+
+
+
+
+</body>
+</html>

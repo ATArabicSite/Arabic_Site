@@ -1,0 +1,1836 @@
+<!DOCTYPE HTML>
+<html lang="ae">
+<head>
+	<meta http-equiv="content-type" content="text/html" />
+	<meta name="author" content="Nicoyah" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/bootstrap.min.css"  />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="icon" href="http://www.asiatravel.com/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script src="https://code.jquery.com/ui/jquery-ui-git.js"></script>
+    
+    <title>Asiatravel.com | UAE Asiatravel</title>
+    
+    
+    <script>
+        $(document).ready(function(){
+            
+           
+            
+            $("#btn-oneway").click(function(){
+                
+                
+                $("#arrivalDate").prop('disabled', true);
+                $("#btn-rnd").removeClass("active")
+                
+            });
+            
+              $("#btn-rnd").click(function(){
+                
+                
+                $("#arrivalDate").prop('disabled', false);
+      
+            });
+      
+            $("#btn-multi").click(function (){
+                
+                window.location="http://flight.asiatravel.com/crs.flight/www/Multi.Stop.Flight.aspx?lan=ar-AE";
+                
+            });
+            
+            
+            
+         $("#withBed").change(function (){
+            var withBed = $("#withBed").val();
+            
+            if (withBed > 0){
+            $("#withBedAge").prop('disabled',false);
+            }else{
+            $("#withBedAge").prop('disabled',true);  
+            }
+            
+         });
+
+         $("#withoutBed").change(function (){
+            var withBed = $("#withoutBed").val();
+            
+            if (withBed > 0){
+            $("#withoutBedAge").prop('disabled',false);
+            }else{
+            $("#withoutBedAge").prop('disabled',true);  
+            }
+            
+         });        
+         
+         
+           $("#fwithBed").change(function (){
+            var withBed = $("#fwithBed").val();
+            
+            if (withBed > 0){
+            $("#fwithBedAge").prop('disabled',false);
+            }else{
+            $("#fwithBedAge").prop('disabled',true);  
+            }
+            
+         });
+
+         $("#fwithoutBed").change(function (){
+            var withBed = $("#fwithoutBed").val();
+            
+            if (withBed > 0){
+            $("#fwithoutBedAge").prop('disabled',false);
+            }else{
+            $("#fwithoutBedAge").prop('disabled',true);  
+            }
+            
+         });   
+          $(".Datepicker" ).datepicker();
+        });
+        
+
+    
+    
+    </script>
+    
+</head>
+
+<body>
+<!-- Header-->
+
+ <div class="container" style="margin-top: 20px;">
+
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+    
+                <div class="left-logo hidden-xs"><img src="images/logo-asiatravel.jpg" class="img-responsive" /></div>   
+                <img src="images/logo-asiatravel-big.jpg" class="img-responsive visible-xs" style="width:100%;"  /> 
+                
+            </div>
+            <div class="col-lg-6 col-md-6  col-sm-6 col-xs-12">
+        <div class="right-logo">
+        <img src="images/fb.png" width="34" height="34" />
+        <img src="images/twitter.png" width="34" height="34" />
+        <img src="images/apple.png" width="122" height="40" />
+            
+             <img src="images/flag-en.png" /> <a href="http://www.asiatravel.com/index.html?trck=gblmn&sid=1000&trck=&lan=">English <span class="caret"></span></a>
+            
+        </div>
+   
+       
+            </div>  
+  </div>
+</div>
+<!---Main Menu-->
+
+<nav class="navbar navbar-default navbar-spacing" style="margin-bottom: 0px;">
+<div class="container-fluid">
+    
+    <div class="navbar-header">
+        <a href="#" class="navbar-brand"><span class="glyphicon glyphicon-home text-white"></span></a>
+        <button type="button" class="navbar-toggle" data-target="#myNav" data-toggle="collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+    </div>
+   
+        
+     <div class="collapse navbar-collapse" id="myNav">
+        <ul class="nav navbar-nav">
+            <li class="active-nav"><a href="#"><span class="text-white">Hotels</span></a></li>
+            <li><a href="#"><span class="text-white">Flights</span></a></li>
+            <li><a href="#"><span class="text-white">Flight + Hotel</span></a></li>
+            <li><a href="#"><span class="text-white">Tours / Attraction & Packages</span></a></li>
+            <li><a href="#"><span class="text-white">Special Promotion</span></a></li>
+        
+        </ul>
+     
+     
+     </div>   
+</div>
+</nav>
+
+
+<div class="row">
+    <div class="col-lg-12 col-md-12 col-xs-12 ">
+    
+    
+    <div class="carousel slide" id="myCarousel" data-ride="carousel" style="height: 333px;">
+    
+    
+    
+
+        <div class="carousel-inner hidden-xs hidden-sm" role="listbox">
+            <div class="item active">
+                <img src="images/slides/slide1.jpg" />
+            </div>
+            
+            <div class="item">
+                <img src="images/slides/slide2.jpg" />
+            </div>
+            
+            <div class="item">
+                <img src="images/slides/slide3.jpg" />
+            </div>
+            
+            <div class="item">
+                <img src="images/slides/slide4.jpg" />
+            </div>
+            
+            
+        </div>
+        
+            <div class="options">
+                
+                
+                    <div class="first-col">
+                         
+                            
+                              <ul class="nav nav-pills nav-stacked">
+                                    <li class="active"><a href="#menu1" data-toggle="tab">Hotels <i class="fa fa-bed sizebig" aria-hidden="true"> </i></a></li>
+                                    <li ><a href="#menu2" data-toggle="tab">Flight <span class="glyphicon glyphicon-plane "></span></a></li>
+                                    <li ><a href="#menu3" data-toggle="tab">Attraction <span class="glyphicon glyphicon-camera "></span></a></li>
+                                    <li ><a href="#menu4" data-toggle="tab">Package <span class="glyphicon glyphicon-briefcase "></span></a></li>
+                        
+                                </ul>
+                            
+                            
+                            
+                      
+                    </div>
+                    <div class="second-col">
+                    <!--Hotel Menu-->
+                 <div class="tab-content">  
+                    
+                        <div class="tab-pane active fade in" id="menu1">
+                            <form role="form">
+                           <h4 class="option-size">Search</h4>
+                       <div class="row">
+                       
+                        <div class="col-lg-12 col-md-12 col-xs-12 ">
+                           	<div class="form-group">
+                                    <div class="icon-addon addon-md">
+                                        <input type="text" placeholder="Search" class="form-control" id="search">
+                                        <label for="email" class="glyphicon glyphicon-search" rel="tooltip" title="email"></label>
+                                    </div>
+                            </div>
+                       </div>    
+                       
+                       <div class="col-lg-6 col-md-6 col-xs-6"> 
+                       <h4 class="option-size">Check In Date</h4>
+                            <div class="form-group">
+                                       <div class="icon-addon addon-md">
+
+                                        <input type="date"  class="form-control" id="checkinDate" />
+                                        <label for="Check In" class="glyphicon glyphicon-calendar" rel="tooltip" title="Check In"></label>
+                                       </div>  
+                                       
+                                        
+                                   </div>
+                        </div>
+                        
+                        <div class="col-lg-6 col-md-6 col-xs-6"> 
+                        <h4 class="option-size">Check Out Date</h4>
+                            <div class="form-group">
+                                       <div class="icon-addon addon-md">
+
+                                        <input type="date"  class="form-control" id="checkoutDate" />
+                                        <label for="Check In" class="glyphicon glyphicon-calendar" rel="tooltip" title="Check In"></label>
+                                       </div>  
+                                       
+                                        
+                                   </div>
+                        </div>
+                        
+                        <div class="col-lg-6 col-md-6 col-xs-6"> 
+                       <h4 class="option-size">Rooms</h4>
+                            <div class="form-group">
+                            
+                                        <select class="form-control">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                            <option>6</option>
+                                            <option>7</option>
+                                            <option>8</option>
+                                        </select>
+                                          
+                                   </div>
+                        </div>
+                        
+                        <div class="col-lg-6 col-md-6 col-xs-6"> 
+                        <h4 class="option-size">Adult</h4>
+                            <div class="form-group">
+                            
+                                        <select class="form-control">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                        
+                                        </select>
+                                          
+                                   </div>        
+                        </div>
+                        
+                        <div class="col-lg-12 col-md-12 col-xs-12">
+                                                    
+                            <button type="button" class="btn-info btn-style">  <i class="fa fa-search lg"></i> Search</button>
+                           
+                        </div>
+                                                
+                 </div>  <!--End Row--> 
+                   </form>         
+             </div>   <!--End Hotel Menu-->
+              
+             
+             <!--- Flight Tickets Start-->
+             <div class="tab-pane fade in" id="menu2">
+             
+             
+                <div class="row">
+                  <form role="form"> 
+                    <div class="col-lg-12 col-md-12 col-xs-12">
+                    <div class="btn-group" style="margin-bottom: 15px;">
+                        <button type="button" class="btn btn-default active" id="btn-rnd">Round Trip</button>
+                        <button type="button" class="btn btn-default" id="btn-oneway">One Way</button>
+                        <button type="button" class="btn btn-default" id="btn-multi">Multi-stop</button>
+                    </div>    
+                    </div>
+                    
+                    <div class="col-lg-6 col-md-6 col-xs-6">
+                        <div class="form-group">
+                            
+                             <input type="text" class="form-control" placeholder="Departure City" />
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-xs-6">
+                        <div class="form-group">
+                             
+                             <input type="text" class="form-control" placeholder="Destination City" />
+                        </div>
+                        
+                    </div>
+                    
+                     <div class="col-lg-6 col-md-6 col-xs-6"> 
+                       <h4 class="option-size">Departure Date</h4>
+                            <div class="form-group">
+                                       <div class="icon-addon addon-md">
+
+                                        <input type="date"  class="form-control" id="departureDate" />
+                                        <label for="Departure Date" class="glyphicon glyphicon-calendar" rel="tooltip" title="Departure Date"></label>
+                                       </div>  
+                                       
+                                        
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-6 col-md-6 col-xs-6"> 
+                        <h4 class="option-size">Arrival Date</h4>
+                            <div class="form-group">
+                                       <div class="icon-addon addon-md">
+
+                                        <input type="date"  class="form-control" id="arrivalDate" />
+                                        <label for="Arrival Date" class="glyphicon glyphicon-calendar" rel="tooltip" title="Arrival Date"></label>
+                                       </div>  
+                                       
+                                        
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-4 col-md-4 col-xs-4"> 
+                            <h4 class="option-size">Class</h4>
+                            <div class="form-group">
+                            
+                                        <select class="form-control">
+                                            <option>Economy Class</option>
+                                            <option>Premium Economy</option>
+                                            <option>Business</option>
+                                            <option>Class First Class</option>
+                                        
+                                        </select>
+                                          
+                            </div>   
+                        </div>
+                        
+                        <div class="col-lg-4 col-md-4 col-xs-4"> 
+                           <h4 class="option-size">Adult</h4>
+                            <div class="form-group">
+                            
+                                        <select class="form-control">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                            <option>6</option>
+                                            <option>7</option>
+                                            <option>8</option>
+                                            <option>9</option>
+                                            <option>10</option>
+                                        
+                                        </select>
+                                          
+                            </div>   
+                        </div>
+                        
+                        <div class="col-lg-4 col-md-4 col-xs-4"> 
+                         <h4 class="option-size">Adult</h4>
+                            <div class="form-group">
+                            
+                                        <select class="form-control">
+                                            <option>0</option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                            <option>6</option>
+                                            <option>7</option>
+                                            <option>8</option>
+                                            <option>9</option>
+                                            <option>10</option>
+                                        
+                                        </select>
+                                          
+                            </div>   
+                        </div>
+                        
+                        <div class="col-lg-12 col-md-12 col-xs-12">
+                         <button type="button" class="btn-info btn-style">  <i class="fa fa-search lg"></i> Search</button>
+                        </div>
+                        
+                        <!---End of Flight Section-->
+                   </form> 
+                </div>
+             
+             
+             </div>  
+                    <!--Attaction Section-->
+             <div class="tab-pane fade in" id="menu3">
+               <form role="form">
+                  <h4 class="option-size">Destination</h4>
+                  <div class="row">
+                  
+                  
+                   <div class="col-lg-12 col-md-12 col-xs-12">
+                    <div class="form-group">
+                        <select class="form-control" id="inputTourKeyword">
+                        <option value="0">Select Destination</option>
+                        
+                        <optgroup class="cnopt" name="AR" label="Argentina">
+                            <option class="ctopt" value="AR,BUE">Buenos Aires</option>
+                            <option class="ctopt" value="AR,FTE">El Calafate</option>
+                            <option class="ctopt" value="AR,USH">Ushuaia</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="AU" label="Australia">
+                            <option class="ctopt" value="AU,ADL">Adelaide</option>
+                            <option class="ctopt" value="AU,BNE">Brisbane</option>
+                            <option class="ctopt" value="AU,MEL">Melbourne (AU)</option>
+                            <option class="ctopt" value="AU,PER">Perth</option>
+                            <option class="ctopt" value="AU,SYD">Sydney (AU)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="AT" label="Austria">
+                            <option class="ctopt" value="AT,SZG">Salzburg</option>
+                            <option class="ctopt" value="AT,VIE">Vienna</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="BB" label="Barbados">
+                            <option class="ctopt" value="BB,BGI">Barbados</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="BE" label="Belgium">
+                        <option class="ctopt" value="BE,BRU">Brussels</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="BR" label="Brazil">
+                        <option class="ctopt" value="BR,MAO">Manaus</option>
+                        <option class="ctopt" value="BR,RIO">Rio de Janeiro</option>
+                        <option class="ctopt" value="BR,SSA">Salvador</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="BN" label="Brunei Darussalam">
+                        <option class="ctopt" value="BN,BWN">Brunei</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="KH" label="Cambodia">
+                        <option class="ctopt" value="KH,PNH">Phnom Penh</option>
+                        <option class="ctopt" value="KH,REP">Siem Reap</option>
+                        <option class="ctopt" value="KH,KOS">Sihanoukville</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="CA" label="Canada">
+                        <option class="ctopt" value="CA,YYC">Calgary</option>
+                        <option class="ctopt" value="CA,YHZ">Halifax</option>
+                        <option class="ctopt" value="CA,YMQ">Montreal</option>
+                        <option class="ctopt" value="CA,NIA">Niagara Falls</option>
+                        <option class="ctopt" value="CA,YQB">Quebec</option>
+                        <option class="ctopt" value="CA,YVR">Vancouver</option>
+                        <option class="ctopt" value="CA,YYJ">Victoria (CA)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="KY" label="Cayman Islands">
+                        <option class="ctopt" value="KY,GCM">Grand Cayman Island</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="CN" label="China">
+                        <option class="ctopt" value="CN,BJS">Beijing</option>
+                        <option class="ctopt" value="CN,CAN">Guangzhou</option>
+                        <option class="ctopt" value="CN,KWL">Guilin</option>
+                        <option class="ctopt" value="CN,SHA">Shanghai</option>
+                        <option class="ctopt" value="CN,SIA">Xi An</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="HR" label="Croatia">
+                        <option class="ctopt" value="HR,DBV">Dubrovnik</option>
+                        <option class="ctopt" value="HR,SPU">Split</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="CZ" label="Czech Republic">
+                        <option class="ctopt" value="CZ,PRG">Prague</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="DK" label="Denmark">
+                        <option class="ctopt" value="DK,CPH">Copenhagen</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="DO" label="Dominican Republic">
+                        <option class="ctopt" value="DO,LRM">La Romana</option>
+                        <option class="ctopt" value="DO,POP">Puerto Plata</option>
+                        <option class="ctopt" value="DO,PUJ">Punta Cana</option>
+                        <option class="ctopt" value="DO,SDQ">Santo Domingo (DO)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="FR" label="France">
+                        <option class="ctopt" value="FR,AVN">Avignon</option>
+                        <option class="ctopt" value="FR,BOD">Bordeaux</option>
+                        <option class="ctopt" value="FR,MRS">Marseille</option>
+                        <option class="ctopt" value="FR,NCE">Nice</option>
+                        <option class="ctopt" value="FR,PAR">Paris</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="DE" label="Germany">
+                        <option class="ctopt" value="DE,BER">Berlin</option>
+                        <option class="ctopt" value="DE,FRA">Frankfurt</option>
+                        <option class="ctopt" value="DE,MUC">Munich</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="GR" label="Greece">
+                        <option class="ctopt" value="GR,ATH">Athens (GR)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="HK" label="Hong Kong (sar) China">
+                        <option class="ctopt" value="HK,HKG">Hong Kong</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="HU" label="Hungary">
+                        <option class="ctopt" value="HU,BUD">Budapest</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="IS" label="Iceland">
+                        <option class="ctopt" value="IS,REK">Reykjavik</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="IN" label="India">
+                        <option class="ctopt" value="IN,AGR">Agra</option>
+                        <option class="ctopt" value="IN,AMD">Ahmedabad</option>
+                        <option class="ctopt" value="IN,BLR">Bangalore</option>
+                        <option class="ctopt" value="IN,MAA">Chennai</option>
+                        <option class="ctopt" value="IN,GOI">Goa</option>
+                        <option class="ctopt" value="IN,HYD">Hyderabad</option>
+                        <option class="ctopt" value="IN,JAI">Jaipur</option>
+                        <option class="ctopt" value="IN,COK">Kochi (IN)</option>
+                        <option class="ctopt" value="IN,CCU">Kolkata</option>
+                        <option class="ctopt" value="IN,BOM">Mumbai</option>
+                        <option class="ctopt" value="IN,DEL">New Delhi</option>
+                        <option class="ctopt" value="IN,TRV">Thiruvananthapuram</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="ID" label="Indonesia">
+                        <option class="ctopt" value="ID,BDO">Bandung</option>
+                        <option class="ctopt" value="ID,BTH">Batam</option>
+                        <option class="ctopt" value="ID,ID6">Bintan</option>
+                        <option class="ctopt" value="ID,DPS">Denpasar Bali</option>
+                        <option class="ctopt" value="ID,JKT">Jakarta</option>
+                        <option class="ctopt" value="ID,LOP">Lombok(Mataram)</option>
+                        <option class="ctopt" value="ID,MLG">Malang</option>
+                        <option class="ctopt" value="ID,SUB">Surabaya</option>
+                        <option class="ctopt" value="ID,JOG">Yogyakarta</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="IE" label="Ireland Republic of">
+                        <option class="ctopt" value="IE,DUB">Dublin</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="IL" label="Israel">
+                        <option class="ctopt" value="IL,TLV">Tel Aviv</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="IT" label="Italy">
+                        <option class="ctopt" value="IT,FLR">Florence (IT)</option>
+                        <option class="ctopt" value="IT,MIL">Milan</option>
+                        <option class="ctopt" value="IT,NAP">Naples (IT)</option>
+                        <option class="ctopt" value="IT,ROM">Rome</option>
+                        <option class="ctopt" value="IT,VCE">Venice</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="JP" label="Japan">
+                        <option class="ctopt" value="JP,UKY">Kyoto</option>
+                        <option class="ctopt" value="JP,TYO">Tokyo</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="KR" label="Korea (South)">
+                        <option class="ctopt" value="KR,SEL">Seoul</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="LA" label="Lao People" democratic="" republic="">
+                        <option class="ctopt" value="LA,LPQ">Luang Prabang</option>
+                        <option class="ctopt" value="LA,VTE">Vientiane</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="MO" label="Macao (sar) China">
+                        <option class="ctopt" value="MO,MFM">Macau</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="MY" label="Malaysia">
+                        <option class="ctopt" value="MY,IPH">Ipoh</option>
+                        <option class="ctopt" value="MY,JHB">Johor Bahru</option>
+                        <option class="ctopt" value="MY,BKI">Kota Kinabalu</option>
+                        <option class="ctopt" value="MY,KUL">Kuala Lumpur</option>
+                        <option class="ctopt" value="MY,KCH">Kuching</option>
+                        <option class="ctopt" value="MY,LGK">Langkawi</option>
+                        <option class="ctopt" value="MY,PEN">Penang</option>
+                        <option class="ctopt" value="MY,SDK">Sandakan</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="MX" label="Mexico">
+                        <option class="ctopt" value="MX,CUN">Cancun</option>
+                        <option class="ctopt" value="MX,CZM">Cozumel</option>
+                        <option class="ctopt" value="MX,MEX">Mexico City</option>
+                        <option class="ctopt" value="MX,PVR">Puerto Vallarta</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="MC" label="Monaco">
+                        <option class="ctopt" value="MC,MCM">Monte Carlo</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="MA" label="Morocco">
+                        <option class="ctopt" value="MA,RAK">Marrakech</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="MM" label="Myanmar">
+                        <option class="ctopt" value="MM,BPE">Bagan</option>
+                        <option class="ctopt" value="MM,MM7">Inle Lake</option>
+                        <option class="ctopt" value="MM,MDL">Mandalay</option>
+                        <option class="ctopt" value="MM,MM4">Nyaung Shwe</option>
+                        <option class="ctopt" value="MM,RGN">Yangon</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="NP" label="Nepal">
+                        <option class="ctopt" value="NP,KTM">Kathmandu</option>
+                        <option class="ctopt" value="NP,PKR">Pokhara</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="NL" label="Netherlands">
+                        <option class="ctopt" value="NL,AMS">Amsterdam</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="NZ" label="New Zealand">
+                        <option class="ctopt" value="NZ,AKL">Auckland</option>
+                        <option class="ctopt" value="NZ,CHC">Christchurch</option>
+                        <option class="ctopt" value="NZ,ZQN">Queenstown</option>
+                        <option class="ctopt" value="NZ,ROT">Rotorua</option>
+                        <option class="ctopt" value="NZ,WLG">Wellington</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="PA" label="Panama">
+                        <option class="ctopt" value="PA,PTY">Panama City (PA)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="PH" label="Philippines">
+                        <option class="ctopt" value="PH,EUQ">Antique</option>
+                        <option class="ctopt" value="PH,BCD">Bacolod</option>
+                        <option class="ctopt" value="PH,BAG">Baguio</option>
+                        <option class="ctopt" value="PH,BQA">Baler</option>
+                        <option class="ctopt" value="PH,P31">Bataan</option>
+                        <option class="ctopt" value="PH,PH2">Batanes</option>
+                        <option class="ctopt" value="PH,PH3">Batangas</option>
+                        <option class="ctopt" value="PH,PH4">Bohol</option>
+                        <option class="ctopt" value="PH,PH5">Boracay</option>
+                        <option class="ctopt" value="PH,P42">Bulacan</option>
+                        <option class="ctopt" value="PH,CGY">Cagayan de Oro</option>
+                        <option class="ctopt" value="PH,CYP">Calbayog</option>
+                        <option class="ctopt" value="PH,PP3">Camarines Norte</option>
+                        <option class="ctopt" value="PH,P43">Camarines Sur</option>
+                        <option class="ctopt" value="PH,CGM">Camiguin</option>
+                        <option class="ctopt" value="PH,CEB">Cebu</option>
+                        <option class="ctopt" value="PH,P75">Compostela Valley</option>
+                        <option class="ctopt" value="PH,USU">Coron</option>
+                        <option class="ctopt" value="PH,CBO">Cotabato</option>
+                        <option class="ctopt" value="PH,DVO">Davao</option>
+                        <option class="ctopt" value="PH,DGT">Dumaguete</option>
+                        <option class="ctopt" value="PH,GES">General Santos</option>
+                        <option class="ctopt" value="PH,P10">Ilocos Norte</option>
+                        <option class="ctopt" value="PH,P11">Ilocos Sur</option>
+                        <option class="ctopt" value="PH,ILO">Iloilo</option>
+                        <option class="ctopt" value="PH,P45">Isabela</option>
+                        <option class="ctopt" value="PH,P76">Kalinga</option>
+                        <option class="ctopt" value="PH,PH9">La Union</option>
+                        <option class="ctopt" value="PH,LAG">Laguna</option>
+                        <option class="ctopt" value="PH,LAO">Laoag</option>
+                        <option class="ctopt" value="PH,LGP">Legazpi</option>
+                        <option class="ctopt" value="PH,MNL">Manila</option>
+                        <option class="ctopt" value="PH,MRQ">Marinduque</option>
+                        <option class="ctopt" value="PH,P54">Mindoro</option>
+                        <option class="ctopt" value="PH,WNP">Naga</option>
+                        <option class="ctopt" value="PH,P57">Negros Occidental</option>
+                        <option class="ctopt" value="PH,P17">Palawan</option>
+                        <option class="ctopt" value="PH,P18">Pampanga</option>
+                        <option class="ctopt" value="PH,P19">Pangasinan</option>
+                        <option class="ctopt" value="PH,P21">Puerto Galera</option>
+                        <option class="ctopt" value="PH,P65">Quezon</option>
+                        <option class="ctopt" value="PH,P66">Quirino</option>
+                        <option class="ctopt" value="PH,P23">Rizal</option>
+                        <option class="ctopt" value="PH,TBH">Romblon</option>
+                        <option class="ctopt" value="PH,P67">Samar</option>
+                        <option class="ctopt" value="PH,P26">Siargao</option>
+                        <option class="ctopt" value="PH,SIQ">Siquijor</option>
+                        <option class="ctopt" value="PH,PP2">Sorsogon</option>
+                        <option class="ctopt" value="PH,SFS">Subic</option>
+                        <option class="ctopt" value="PH,SUG">Surigao</option>
+                        <option class="ctopt" value="PH,TAC">Tacloban</option>
+                        <option class="ctopt" value="PH,P32">Tagaytay</option>
+                        <option class="ctopt" value="PH,P27">Tarlac</option>
+                        <option class="ctopt" value="PH,TUG">Tuguegarao</option>
+                        <option class="ctopt" value="PH,VRC">Virac</option>
+                        <option class="ctopt" value="PH,ZAM">Zamboanga</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="PL" label="Poland">
+                        <option class="ctopt" value="PL,KRK">Krakow</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="PT" label="Portugal">
+                        <option class="ctopt" value="PT,LIS">Lisbon</option>
+                        <option class="ctopt" value="PT,OPO">Porto</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="PR" label="Puerto Rico">
+                        <option class="ctopt" value="PR,SJU">San Juan (PR)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="RU" label="Russian Federation">
+                        <option class="ctopt" value="RU,MOW">Moscow</option>
+                        <option class="ctopt" value="RU,LED">St Petersburg</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="SG" label="Singapore">
+                        <option class="ctopt" value="SG,SIN">Singapore</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="ZA" label="South Africa">
+                        <option class="ctopt" value="ZA,CPT">Cape Town</option>
+                        <option class="ctopt" value="ZA,JNB">Johannesburg</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="ES" label="Spain">
+                        <option class="ctopt" value="ES,BCN">Barcelona (ES)</option>
+                        <option class="ctopt" value="ES,GRX">Granada</option>
+                        <option class="ctopt" value="ES,MAD">Madrid</option>
+                        <option class="ctopt" value="ES,AGP">Malaga</option>
+                        <option class="ctopt" value="ES,PMI">Palma Mallorca</option>
+                        <option class="ctopt" value="ES,SVQ">Seville</option>
+                        <option class="ctopt" value="ES,TCI">Tenerife</option>
+                        <option class="ctopt" value="ES,VLC">Valencia (ES)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="SE" label="Sweden">
+                        <option class="ctopt" value="SE,STO">Stockholm</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="CH" label="Switzerland">
+                        <option class="ctopt" value="CH,GVA">Geneva</option>
+                        <option class="ctopt" value="CH,ZRH">Zurich</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="TW" label="Taiwan">
+                        <option class="ctopt" value="TW,TPE">Taipei</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="TH" label="Thailand">
+                        <option class="ctopt" value="TH,BKK">Bangkok</option>
+                        <option class="ctopt" value="TH,CNX">Chiang Mai</option>
+                        <option class="ctopt" value="TH,HDY">Hat Yai</option>
+                        <option class="ctopt" value="TH,HHQ">Hua Hin</option>
+                        <option class="ctopt" value="TH,TH7">Khao Lak</option>
+                        <option class="ctopt" value="TH,TH8">Khao Yai</option>
+                        <option class="ctopt" value="TH,USM">Koh Samui</option>
+                        <option class="ctopt" value="TH,KBV">Krabi</option>
+                        <option class="ctopt" value="TH,PYX">Pattaya</option>
+                        <option class="ctopt" value="TH,HKT">Phuket</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="TR" label="Turkey">
+                        <option class="ctopt" value="TR,IST">Istanbul</option>
+                        <option class="ctopt" value="TR,IZM">Izmir</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="AE" label="United Arab Emirates">
+                        <option class="ctopt" value="AE,AUH">Abu Dhabi</option>
+                        <option class="ctopt" value="AE,FJR">Al-Fujairah</option>
+                        <option class="ctopt" value="AE,DXB">Dubai</option>
+                        <option class="ctopt" value="AE,RKT">Ras al Khaimah</option>
+                        <option class="ctopt" value="AE,SHJ">Sharjah</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="GB" label="United Kingdom">
+                        <option class="ctopt" value="GB,EDI">Edinburgh</option>
+                        <option class="ctopt" value="GB,LON">London (GB)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="US" label="United States">
+                        <option class="ctopt" value="US,ANA">Anaheim</option>
+                        <option class="ctopt" value="US,AUS">Austin</option>
+                        <option class="ctopt" value="US,BOS">Boston</option>
+                        <option class="ctopt" value="US,CHI">Chicago</option>
+                        <option class="ctopt" value="US,DEN">Denver</option>
+                        <option class="ctopt" value="US,HNL">Honolulu</option>
+                        <option class="ctopt" value="US,HOU">Houston</option>
+                        <option class="ctopt" value="US,OGG">Kahului</option>
+                        <option class="ctopt" value="US,EYW">Key West</option>
+                        <option class="ctopt" value="US,KOA">Kona</option>
+                        <option class="ctopt" value="US,LAS">Las Vegas</option>
+                        <option class="ctopt" value="US,LAX">Los Angeles</option>
+                        <option class="ctopt" value="US,MIA">Miami</option>
+                        <option class="ctopt" value="US,MSY">New Orleans</option>
+                        <option class="ctopt" value="US,NYC">New York</option>
+                        <option class="ctopt" value="US,ORL">Orlando</option>
+                        <option class="ctopt" value="US,PHL">Philadelphia</option>
+                        <option class="ctopt" value="US,PHX">Phoenix</option>
+                        <option class="ctopt" value="US,PDX">Portland (US) OR</option>
+                        <option class="ctopt" value="US,SAT">San Antonio (US)</option>
+                        <option class="ctopt" value="US,SAN">San Diego</option>
+                        <option class="ctopt" value="US,SFO">San Francisco</option>
+                        <option class="ctopt" value="US,SEA">Seattle</option>
+                        <option class="ctopt" value="US,TPA">Tampa</option>
+                        <option class="ctopt" value="US,WAS">Washington</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="VN" label="Vietnam">
+                        <option class="ctopt" value="VN,DAD">Da Nang</option>
+                        <option class="ctopt" value="VN,DLI">Dalat</option>
+                        <option class="ctopt" value="VN,VN4">Halong</option>
+                        <option class="ctopt" value="VN,HAN">Hanoi</option>
+                        <option class="ctopt" value="VN,SGN">Ho Chi Minh City</option>
+                        <option class="ctopt" value="VN,VN5">Hoi An</option>
+                        <option class="ctopt" value="VN,HUI">Hue</option>
+                        <option class="ctopt" value="VN,NHA">Nha Trang</option>
+                        <option class="ctopt" value="VN,VN6">Phan Thiet</option>
+                        <option class="ctopt" value="VN,PQC">Phuquoc</option>
+                        </optgroup>
+                        
+                        </select>
+                  
+                     </div>
+                    
+                   </div>
+                    
+                    <div class="col-lg-12 col-md-12 col-xs-12">
+                        <button type="button" class="btn btn-info btn-style"><i class="fa fa-search lg"></i> Search</button>
+                    
+                    </div>
+                    
+                </form>
+               </div>
+             </div>
+             <!--Package Section-->
+             <div class="tab-pane fade in" id="menu4">
+                
+                    <!--package Menu-->
+                <ul class="nav nav-tabs" >
+                    <li class="active"><a href="#flighthotel-tab" data-toggle="tab">Flights + Hotel + Tour</a></li>
+                    <li><a href="#flight-tab" data-toggle="tab">Flights +</a></li>
+                    <li><a href="#hoteltour-tab" data-toggle="tab">Hotel + Tour</a></li>
+                </ul>
+                
+                
+            <div class="tab-content">
+            
+            <!--Flight Hotel Tour-tab--->
+               <div class="tab-pane active fade in" id="flighthotel-tab" >
+               <form role="form">      
+                     <div class="row" style="margin-top: 20px;">
+                             <div class="col-lg-6 col-md-6 col-xs-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Departure City" />
+                                </div>
+                             </div>
+                             
+                             <div class="col-lg-6 col-md-6 col-xs-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control"  placeholder="Destination City" />
+                                </div>
+                             </div>
+                             
+                             <div class="col-lg-6 col-md-6 col-xs-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control Datepicker"  placeholder="Departure Date" />
+                                </div>
+                             </div>
+                             
+                             <div class="col-lg-6 col-md-6 col-xs-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control Datepicker"  placeholder="Arrival Date" />
+                                </div>
+                             </div>
+                             
+                             
+                             <div class="col-lg-12 col-md-12 col-xs-12">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading"><p class="htl-room">Hotel Room</p></div>
+                                    <div class="panel-body">
+                                        <div class="row">
+                                                <div class="col-lg-3 col-md-3 col-xs-3">
+                                                    <h4 class="option-size">Room</h4>
+                                                        <div class="form-group">
+                                                            <select class="form-control">
+                                                                <option>1</option>
+                                                                <option>2</option>
+                                                                <option>3</option>
+                                                                <option>4</option>
+                                                                <option>5</option>
+                                                            </select>
+                                                        </div>
+                                                </div> 
+                                                
+                                                <div class="col-lg-3 col-md-3 col-xs-3">
+                                                    <h4 class="option-size">Adult</h4>
+                                                        <div class="form-group">
+                                                            <select class="form-control">
+                                                                <option>1</option>
+                                                                <option>2</option>
+                                                                <option>3</option>
+                                                                <option>4</option>
+                                                                <option>5</option>
+                                                            </select>
+                                                        </div>
+                                                </div>
+                                                
+                                                <div class="col-lg-4 col-md-4 col-xs-4">
+                                                    <h4 class="option-size">Children (2-11 years)</h4>
+                                                        <div class="form-group">
+                                                            <select class="form-control" id="withBed">
+                                                                <option value="0">0 - Bed</option>
+                                                                <option value="1">1 - Bed</option>
+                                                               
+                                                            </select>
+                                                       
+                                                            <select class="form-control" id="withoutBed">
+                                                                <option value="0">0 - Without Bed</option>
+                                                                <option value="1">1 - Without Bed</option>
+                                                               
+                                                            </select>
+                                                        </div>
+                                                </div>
+                                                 
+                                                <div class="col-lg-2 col-md-2 col-xs-2">
+                                                
+                                                    <h4 class="option-size">Age</h4>
+                                                        <div class="form-group">
+                                                            <input type="text" id="withBedAge" disabled="" class="form-control" />
+                                                            <input type="text" id="withoutBedAge" disabled="" class="form-control" />
+                                                        </div>
+                                                    
+                                                
+                                                
+                                                </div>
+                                                
+                                                <div class="col-lg-12 col-md-12 col-xs-12">    
+                                                    <button type="button" class="btn btn-info btn-style"><i class="fa fa-search lg"></i>Search</button>
+                                                </div>
+                                        </div>
+                                    </div>
+                                
+                                </div>
+                             </div>
+                     </div>
+              </form> 
+              </div> 
+            <!--Flight + tab---> 
+                <div class="tab-pane fade in" id="flight-tab" >
+               <form role="form">      
+                     <div class="row" style="margin-top: 20px;">
+                             <div class="col-lg-6 col-md-6 col-xs-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Departure City" />
+                                </div>
+                             </div>
+                             
+                             <div class="col-lg-6 col-md-6 col-xs-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control"  placeholder="Destination City" />
+                                </div>
+                             </div>
+                             
+                             <div class="col-lg-6 col-md-6 col-xs-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control Datepicker"  placeholder="Departure Date" />
+                                </div>
+                             </div>
+                             
+                             <div class="col-lg-6 col-md-6 col-xs-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control Datepicker"  placeholder="Arrival Date" />
+                                </div>
+                             </div>
+                             
+                             
+                             <div class="col-lg-12 col-md-12 col-xs-12">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading"><p class="htl-room">Hotel Room</p></div>
+                                    <div class="panel-body">
+                                        <div class="row">
+                                                <div class="col-lg-3 col-md-3 col-xs-3">
+                                                    <h4 class="option-size">Room</h4>
+                                                        <div class="form-group">
+                                                            <select class="form-control">
+                                                                <option>1</option>
+                                                                <option>2</option>
+                                                                <option>3</option>
+                                                                <option>4</option>
+                                                                <option>5</option>
+                                                            </select>
+                                                        </div>
+                                                </div> 
+                                                
+                                                <div class="col-lg-3 col-md-3 col-xs-3">
+                                                    <h4 class="option-size">Adult</h4>
+                                                        <div class="form-group">
+                                                            <select class="form-control">
+                                                                <option>1</option>
+                                                                <option>2</option>
+                                                                <option>3</option>
+                                                                <option>4</option>
+                                                                <option>5</option>
+                                                            </select>
+                                                        </div>
+                                                </div>
+                                                
+                                                  <div class="col-lg-4 col-md-4 col-xs-4">
+                                                    <h4 class="option-size">Children (2-11 years)</h4>
+                                                        <div class="form-group">
+                                                            <select class="form-control" id="fwithBed">
+                                                                <option value="0">0 - Bed</option>
+                                                                <option value="1">1 - Bed</option>
+                                                               
+                                                            </select>
+                                                       
+                                                            <select class="form-control" id="fwithoutBed">
+                                                                <option value="0">0 - Without Bed</option>
+                                                                <option value="1">1 - Without Bed</option>
+                                                               
+                                                            </select>
+                                                        </div>
+                                                </div>
+                                                 
+                                                <div class="col-lg-2 col-md-2 col-xs-2">
+                                                
+                                                    <h4 class="option-size">Age</h4>
+                                                        <div class="form-group">
+                                                            <input type="text" id="fwithBedAge" disabled="" class="form-control" />
+                                                            <input type="text" id="fwithoutBedAge" disabled="" class="form-control" />
+                                                        </div>
+                                                    
+                                                
+                                                
+                                                </div>
+                                                
+                                                <div class="col-lg-12 col-md-12 col-xs-12">    
+                                                    <button type="button" class="btn btn-info btn-style"><i class="fa fa-search lg"></i>Search</button>
+                                                </div>
+                                        </div>
+                                    </div>
+                                
+                                </div>
+                             </div>
+                     </div>
+              </form> 
+              </div>  
+             <!--Hotel Tour-tab--->
+                 <div class="tab-pane fade in" id="hoteltour-tab" >
+               <form role="form">
+                  <h4 class="option-size"  style="margin-top: 15px;">Destination</h4>
+                  <div class="row">
+                  
+                  
+                   <div class="col-lg-12 col-md-12 col-xs-12">
+                    <div class="form-group">
+                        <select class="form-control" id="inputTourKeyword">
+                        <option value="0">Select Destination</option>
+                        
+                        <optgroup class="cnopt" name="AR" label="Argentina">
+                            <option class="ctopt" value="AR,BUE">Buenos Aires</option>
+                            <option class="ctopt" value="AR,FTE">El Calafate</option>
+                            <option class="ctopt" value="AR,USH">Ushuaia</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="AU" label="Australia">
+                            <option class="ctopt" value="AU,ADL">Adelaide</option>
+                            <option class="ctopt" value="AU,BNE">Brisbane</option>
+                            <option class="ctopt" value="AU,MEL">Melbourne (AU)</option>
+                            <option class="ctopt" value="AU,PER">Perth</option>
+                            <option class="ctopt" value="AU,SYD">Sydney (AU)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="AT" label="Austria">
+                            <option class="ctopt" value="AT,SZG">Salzburg</option>
+                            <option class="ctopt" value="AT,VIE">Vienna</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="BB" label="Barbados">
+                            <option class="ctopt" value="BB,BGI">Barbados</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="BE" label="Belgium">
+                        <option class="ctopt" value="BE,BRU">Brussels</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="BR" label="Brazil">
+                        <option class="ctopt" value="BR,MAO">Manaus</option>
+                        <option class="ctopt" value="BR,RIO">Rio de Janeiro</option>
+                        <option class="ctopt" value="BR,SSA">Salvador</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="BN" label="Brunei Darussalam">
+                        <option class="ctopt" value="BN,BWN">Brunei</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="KH" label="Cambodia">
+                        <option class="ctopt" value="KH,PNH">Phnom Penh</option>
+                        <option class="ctopt" value="KH,REP">Siem Reap</option>
+                        <option class="ctopt" value="KH,KOS">Sihanoukville</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="CA" label="Canada">
+                        <option class="ctopt" value="CA,YYC">Calgary</option>
+                        <option class="ctopt" value="CA,YHZ">Halifax</option>
+                        <option class="ctopt" value="CA,YMQ">Montreal</option>
+                        <option class="ctopt" value="CA,NIA">Niagara Falls</option>
+                        <option class="ctopt" value="CA,YQB">Quebec</option>
+                        <option class="ctopt" value="CA,YVR">Vancouver</option>
+                        <option class="ctopt" value="CA,YYJ">Victoria (CA)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="KY" label="Cayman Islands">
+                        <option class="ctopt" value="KY,GCM">Grand Cayman Island</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="CN" label="China">
+                        <option class="ctopt" value="CN,BJS">Beijing</option>
+                        <option class="ctopt" value="CN,CAN">Guangzhou</option>
+                        <option class="ctopt" value="CN,KWL">Guilin</option>
+                        <option class="ctopt" value="CN,SHA">Shanghai</option>
+                        <option class="ctopt" value="CN,SIA">Xi An</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="HR" label="Croatia">
+                        <option class="ctopt" value="HR,DBV">Dubrovnik</option>
+                        <option class="ctopt" value="HR,SPU">Split</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="CZ" label="Czech Republic">
+                        <option class="ctopt" value="CZ,PRG">Prague</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="DK" label="Denmark">
+                        <option class="ctopt" value="DK,CPH">Copenhagen</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="DO" label="Dominican Republic">
+                        <option class="ctopt" value="DO,LRM">La Romana</option>
+                        <option class="ctopt" value="DO,POP">Puerto Plata</option>
+                        <option class="ctopt" value="DO,PUJ">Punta Cana</option>
+                        <option class="ctopt" value="DO,SDQ">Santo Domingo (DO)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="FR" label="France">
+                        <option class="ctopt" value="FR,AVN">Avignon</option>
+                        <option class="ctopt" value="FR,BOD">Bordeaux</option>
+                        <option class="ctopt" value="FR,MRS">Marseille</option>
+                        <option class="ctopt" value="FR,NCE">Nice</option>
+                        <option class="ctopt" value="FR,PAR">Paris</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="DE" label="Germany">
+                        <option class="ctopt" value="DE,BER">Berlin</option>
+                        <option class="ctopt" value="DE,FRA">Frankfurt</option>
+                        <option class="ctopt" value="DE,MUC">Munich</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="GR" label="Greece">
+                        <option class="ctopt" value="GR,ATH">Athens (GR)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="HK" label="Hong Kong (sar) China">
+                        <option class="ctopt" value="HK,HKG">Hong Kong</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="HU" label="Hungary">
+                        <option class="ctopt" value="HU,BUD">Budapest</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="IS" label="Iceland">
+                        <option class="ctopt" value="IS,REK">Reykjavik</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="IN" label="India">
+                        <option class="ctopt" value="IN,AGR">Agra</option>
+                        <option class="ctopt" value="IN,AMD">Ahmedabad</option>
+                        <option class="ctopt" value="IN,BLR">Bangalore</option>
+                        <option class="ctopt" value="IN,MAA">Chennai</option>
+                        <option class="ctopt" value="IN,GOI">Goa</option>
+                        <option class="ctopt" value="IN,HYD">Hyderabad</option>
+                        <option class="ctopt" value="IN,JAI">Jaipur</option>
+                        <option class="ctopt" value="IN,COK">Kochi (IN)</option>
+                        <option class="ctopt" value="IN,CCU">Kolkata</option>
+                        <option class="ctopt" value="IN,BOM">Mumbai</option>
+                        <option class="ctopt" value="IN,DEL">New Delhi</option>
+                        <option class="ctopt" value="IN,TRV">Thiruvananthapuram</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="ID" label="Indonesia">
+                        <option class="ctopt" value="ID,BDO">Bandung</option>
+                        <option class="ctopt" value="ID,BTH">Batam</option>
+                        <option class="ctopt" value="ID,ID6">Bintan</option>
+                        <option class="ctopt" value="ID,DPS">Denpasar Bali</option>
+                        <option class="ctopt" value="ID,JKT">Jakarta</option>
+                        <option class="ctopt" value="ID,LOP">Lombok(Mataram)</option>
+                        <option class="ctopt" value="ID,MLG">Malang</option>
+                        <option class="ctopt" value="ID,SUB">Surabaya</option>
+                        <option class="ctopt" value="ID,JOG">Yogyakarta</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="IE" label="Ireland Republic of">
+                        <option class="ctopt" value="IE,DUB">Dublin</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="IL" label="Israel">
+                        <option class="ctopt" value="IL,TLV">Tel Aviv</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="IT" label="Italy">
+                        <option class="ctopt" value="IT,FLR">Florence (IT)</option>
+                        <option class="ctopt" value="IT,MIL">Milan</option>
+                        <option class="ctopt" value="IT,NAP">Naples (IT)</option>
+                        <option class="ctopt" value="IT,ROM">Rome</option>
+                        <option class="ctopt" value="IT,VCE">Venice</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="JP" label="Japan">
+                        <option class="ctopt" value="JP,UKY">Kyoto</option>
+                        <option class="ctopt" value="JP,TYO">Tokyo</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="KR" label="Korea (South)">
+                        <option class="ctopt" value="KR,SEL">Seoul</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="LA" label="Lao People" democratic="" republic="">
+                        <option class="ctopt" value="LA,LPQ">Luang Prabang</option>
+                        <option class="ctopt" value="LA,VTE">Vientiane</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="MO" label="Macao (sar) China">
+                        <option class="ctopt" value="MO,MFM">Macau</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="MY" label="Malaysia">
+                        <option class="ctopt" value="MY,IPH">Ipoh</option>
+                        <option class="ctopt" value="MY,JHB">Johor Bahru</option>
+                        <option class="ctopt" value="MY,BKI">Kota Kinabalu</option>
+                        <option class="ctopt" value="MY,KUL">Kuala Lumpur</option>
+                        <option class="ctopt" value="MY,KCH">Kuching</option>
+                        <option class="ctopt" value="MY,LGK">Langkawi</option>
+                        <option class="ctopt" value="MY,PEN">Penang</option>
+                        <option class="ctopt" value="MY,SDK">Sandakan</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="MX" label="Mexico">
+                        <option class="ctopt" value="MX,CUN">Cancun</option>
+                        <option class="ctopt" value="MX,CZM">Cozumel</option>
+                        <option class="ctopt" value="MX,MEX">Mexico City</option>
+                        <option class="ctopt" value="MX,PVR">Puerto Vallarta</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="MC" label="Monaco">
+                        <option class="ctopt" value="MC,MCM">Monte Carlo</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="MA" label="Morocco">
+                        <option class="ctopt" value="MA,RAK">Marrakech</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="MM" label="Myanmar">
+                        <option class="ctopt" value="MM,BPE">Bagan</option>
+                        <option class="ctopt" value="MM,MM7">Inle Lake</option>
+                        <option class="ctopt" value="MM,MDL">Mandalay</option>
+                        <option class="ctopt" value="MM,MM4">Nyaung Shwe</option>
+                        <option class="ctopt" value="MM,RGN">Yangon</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="NP" label="Nepal">
+                        <option class="ctopt" value="NP,KTM">Kathmandu</option>
+                        <option class="ctopt" value="NP,PKR">Pokhara</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="NL" label="Netherlands">
+                        <option class="ctopt" value="NL,AMS">Amsterdam</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="NZ" label="New Zealand">
+                        <option class="ctopt" value="NZ,AKL">Auckland</option>
+                        <option class="ctopt" value="NZ,CHC">Christchurch</option>
+                        <option class="ctopt" value="NZ,ZQN">Queenstown</option>
+                        <option class="ctopt" value="NZ,ROT">Rotorua</option>
+                        <option class="ctopt" value="NZ,WLG">Wellington</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="PA" label="Panama">
+                        <option class="ctopt" value="PA,PTY">Panama City (PA)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="PH" label="Philippines">
+                        <option class="ctopt" value="PH,EUQ">Antique</option>
+                        <option class="ctopt" value="PH,BCD">Bacolod</option>
+                        <option class="ctopt" value="PH,BAG">Baguio</option>
+                        <option class="ctopt" value="PH,BQA">Baler</option>
+                        <option class="ctopt" value="PH,P31">Bataan</option>
+                        <option class="ctopt" value="PH,PH2">Batanes</option>
+                        <option class="ctopt" value="PH,PH3">Batangas</option>
+                        <option class="ctopt" value="PH,PH4">Bohol</option>
+                        <option class="ctopt" value="PH,PH5">Boracay</option>
+                        <option class="ctopt" value="PH,P42">Bulacan</option>
+                        <option class="ctopt" value="PH,CGY">Cagayan de Oro</option>
+                        <option class="ctopt" value="PH,CYP">Calbayog</option>
+                        <option class="ctopt" value="PH,PP3">Camarines Norte</option>
+                        <option class="ctopt" value="PH,P43">Camarines Sur</option>
+                        <option class="ctopt" value="PH,CGM">Camiguin</option>
+                        <option class="ctopt" value="PH,CEB">Cebu</option>
+                        <option class="ctopt" value="PH,P75">Compostela Valley</option>
+                        <option class="ctopt" value="PH,USU">Coron</option>
+                        <option class="ctopt" value="PH,CBO">Cotabato</option>
+                        <option class="ctopt" value="PH,DVO">Davao</option>
+                        <option class="ctopt" value="PH,DGT">Dumaguete</option>
+                        <option class="ctopt" value="PH,GES">General Santos</option>
+                        <option class="ctopt" value="PH,P10">Ilocos Norte</option>
+                        <option class="ctopt" value="PH,P11">Ilocos Sur</option>
+                        <option class="ctopt" value="PH,ILO">Iloilo</option>
+                        <option class="ctopt" value="PH,P45">Isabela</option>
+                        <option class="ctopt" value="PH,P76">Kalinga</option>
+                        <option class="ctopt" value="PH,PH9">La Union</option>
+                        <option class="ctopt" value="PH,LAG">Laguna</option>
+                        <option class="ctopt" value="PH,LAO">Laoag</option>
+                        <option class="ctopt" value="PH,LGP">Legazpi</option>
+                        <option class="ctopt" value="PH,MNL">Manila</option>
+                        <option class="ctopt" value="PH,MRQ">Marinduque</option>
+                        <option class="ctopt" value="PH,P54">Mindoro</option>
+                        <option class="ctopt" value="PH,WNP">Naga</option>
+                        <option class="ctopt" value="PH,P57">Negros Occidental</option>
+                        <option class="ctopt" value="PH,P17">Palawan</option>
+                        <option class="ctopt" value="PH,P18">Pampanga</option>
+                        <option class="ctopt" value="PH,P19">Pangasinan</option>
+                        <option class="ctopt" value="PH,P21">Puerto Galera</option>
+                        <option class="ctopt" value="PH,P65">Quezon</option>
+                        <option class="ctopt" value="PH,P66">Quirino</option>
+                        <option class="ctopt" value="PH,P23">Rizal</option>
+                        <option class="ctopt" value="PH,TBH">Romblon</option>
+                        <option class="ctopt" value="PH,P67">Samar</option>
+                        <option class="ctopt" value="PH,P26">Siargao</option>
+                        <option class="ctopt" value="PH,SIQ">Siquijor</option>
+                        <option class="ctopt" value="PH,PP2">Sorsogon</option>
+                        <option class="ctopt" value="PH,SFS">Subic</option>
+                        <option class="ctopt" value="PH,SUG">Surigao</option>
+                        <option class="ctopt" value="PH,TAC">Tacloban</option>
+                        <option class="ctopt" value="PH,P32">Tagaytay</option>
+                        <option class="ctopt" value="PH,P27">Tarlac</option>
+                        <option class="ctopt" value="PH,TUG">Tuguegarao</option>
+                        <option class="ctopt" value="PH,VRC">Virac</option>
+                        <option class="ctopt" value="PH,ZAM">Zamboanga</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="PL" label="Poland">
+                        <option class="ctopt" value="PL,KRK">Krakow</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="PT" label="Portugal">
+                        <option class="ctopt" value="PT,LIS">Lisbon</option>
+                        <option class="ctopt" value="PT,OPO">Porto</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="PR" label="Puerto Rico">
+                        <option class="ctopt" value="PR,SJU">San Juan (PR)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="RU" label="Russian Federation">
+                        <option class="ctopt" value="RU,MOW">Moscow</option>
+                        <option class="ctopt" value="RU,LED">St Petersburg</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="SG" label="Singapore">
+                        <option class="ctopt" value="SG,SIN">Singapore</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="ZA" label="South Africa">
+                        <option class="ctopt" value="ZA,CPT">Cape Town</option>
+                        <option class="ctopt" value="ZA,JNB">Johannesburg</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="ES" label="Spain">
+                        <option class="ctopt" value="ES,BCN">Barcelona (ES)</option>
+                        <option class="ctopt" value="ES,GRX">Granada</option>
+                        <option class="ctopt" value="ES,MAD">Madrid</option>
+                        <option class="ctopt" value="ES,AGP">Malaga</option>
+                        <option class="ctopt" value="ES,PMI">Palma Mallorca</option>
+                        <option class="ctopt" value="ES,SVQ">Seville</option>
+                        <option class="ctopt" value="ES,TCI">Tenerife</option>
+                        <option class="ctopt" value="ES,VLC">Valencia (ES)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="SE" label="Sweden">
+                        <option class="ctopt" value="SE,STO">Stockholm</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="CH" label="Switzerland">
+                        <option class="ctopt" value="CH,GVA">Geneva</option>
+                        <option class="ctopt" value="CH,ZRH">Zurich</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="TW" label="Taiwan">
+                        <option class="ctopt" value="TW,TPE">Taipei</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="TH" label="Thailand">
+                        <option class="ctopt" value="TH,BKK">Bangkok</option>
+                        <option class="ctopt" value="TH,CNX">Chiang Mai</option>
+                        <option class="ctopt" value="TH,HDY">Hat Yai</option>
+                        <option class="ctopt" value="TH,HHQ">Hua Hin</option>
+                        <option class="ctopt" value="TH,TH7">Khao Lak</option>
+                        <option class="ctopt" value="TH,TH8">Khao Yai</option>
+                        <option class="ctopt" value="TH,USM">Koh Samui</option>
+                        <option class="ctopt" value="TH,KBV">Krabi</option>
+                        <option class="ctopt" value="TH,PYX">Pattaya</option>
+                        <option class="ctopt" value="TH,HKT">Phuket</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="TR" label="Turkey">
+                        <option class="ctopt" value="TR,IST">Istanbul</option>
+                        <option class="ctopt" value="TR,IZM">Izmir</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="AE" label="United Arab Emirates">
+                        <option class="ctopt" value="AE,AUH">Abu Dhabi</option>
+                        <option class="ctopt" value="AE,FJR">Al-Fujairah</option>
+                        <option class="ctopt" value="AE,DXB">Dubai</option>
+                        <option class="ctopt" value="AE,RKT">Ras al Khaimah</option>
+                        <option class="ctopt" value="AE,SHJ">Sharjah</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="GB" label="United Kingdom">
+                        <option class="ctopt" value="GB,EDI">Edinburgh</option>
+                        <option class="ctopt" value="GB,LON">London (GB)</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="US" label="United States">
+                        <option class="ctopt" value="US,ANA">Anaheim</option>
+                        <option class="ctopt" value="US,AUS">Austin</option>
+                        <option class="ctopt" value="US,BOS">Boston</option>
+                        <option class="ctopt" value="US,CHI">Chicago</option>
+                        <option class="ctopt" value="US,DEN">Denver</option>
+                        <option class="ctopt" value="US,HNL">Honolulu</option>
+                        <option class="ctopt" value="US,HOU">Houston</option>
+                        <option class="ctopt" value="US,OGG">Kahului</option>
+                        <option class="ctopt" value="US,EYW">Key West</option>
+                        <option class="ctopt" value="US,KOA">Kona</option>
+                        <option class="ctopt" value="US,LAS">Las Vegas</option>
+                        <option class="ctopt" value="US,LAX">Los Angeles</option>
+                        <option class="ctopt" value="US,MIA">Miami</option>
+                        <option class="ctopt" value="US,MSY">New Orleans</option>
+                        <option class="ctopt" value="US,NYC">New York</option>
+                        <option class="ctopt" value="US,ORL">Orlando</option>
+                        <option class="ctopt" value="US,PHL">Philadelphia</option>
+                        <option class="ctopt" value="US,PHX">Phoenix</option>
+                        <option class="ctopt" value="US,PDX">Portland (US) OR</option>
+                        <option class="ctopt" value="US,SAT">San Antonio (US)</option>
+                        <option class="ctopt" value="US,SAN">San Diego</option>
+                        <option class="ctopt" value="US,SFO">San Francisco</option>
+                        <option class="ctopt" value="US,SEA">Seattle</option>
+                        <option class="ctopt" value="US,TPA">Tampa</option>
+                        <option class="ctopt" value="US,WAS">Washington</option>
+                        </optgroup>
+                        
+                        <optgroup class="cnopt" name="VN" label="Vietnam">
+                        <option class="ctopt" value="VN,DAD">Da Nang</option>
+                        <option class="ctopt" value="VN,DLI">Dalat</option>
+                        <option class="ctopt" value="VN,VN4">Halong</option>
+                        <option class="ctopt" value="VN,HAN">Hanoi</option>
+                        <option class="ctopt" value="VN,SGN">Ho Chi Minh City</option>
+                        <option class="ctopt" value="VN,VN5">Hoi An</option>
+                        <option class="ctopt" value="VN,HUI">Hue</option>
+                        <option class="ctopt" value="VN,NHA">Nha Trang</option>
+                        <option class="ctopt" value="VN,VN6">Phan Thiet</option>
+                        <option class="ctopt" value="VN,PQC">Phuquoc</option>
+                        </optgroup>
+                        
+                        </select>
+                  
+                     </div>
+                    
+                   </div>
+                    
+                    <div class="col-lg-12 col-md-12 col-xs-12">
+                        <button type="button" class="btn btn-info btn-style"><i class="fa fa-search lg"></i> Search</button>
+                    
+                    </div>
+                    
+                </form>
+               </div>
+             </div>
+                
+               
+            </div>    
+             
+             </div>              
+                   
+                
+                </div>
+            </div>
+      
+                
+           </div>      
+                
+            
+            </div>
+            <!--End of carousel-->
+ 
+
+</div>
+
+</div>
+
+<div class="kabayan-wrapper">
+      <div class="row">
+        
+        <div class="col-lg-12 col-md-12 col-xs-12">
+                <h3>Kabayan Stop Over Packages</h3>
+        </div>
+        </div>
+
+<div class="kabayan-stop-over">
+
+      <div class="row">
+        
+
+            
+                <div class="col-lg-6 col-md-6 col-xs-12" style="padding-bottom: 10px;">
+                
+                    <div class="row">
+                    
+                    
+                        <div class="col-lg-12 col-md-12 col-xs-12">
+                            <img src="images/kabayan-stop-over/banner.png"  class="img-responsive"  style="margin-bottom: 10px;width:100%" />
+                        </div>   
+                         <!--Hong Kong-->
+                        <div class="col-lg-6 col-md-6 col-xs-6" >
+                            <div class="ksop-destination" >
+                                
+                                <div class="col-lg-6 col-md-6 col-xs-6" >
+                                <h4>Hong Kong</h4> 
+                                </div>
+                                
+                                <div class="col-lg-6 col-md-6 col-xs-6" >
+                                
+                                    <p>Rate from<br /> <span class="text-red">AED 1,850++</span></p> 
+                                
+                                </div>
+                            </div>
+                                               
+                        
+                        </div>
+                        
+                        
+                         <!--Singapore-->
+                        <div class="col-lg-6 col-md-6 col-xs-6" >
+                            <div class="ksop-destination" >
+                            
+                                <div class="col-lg-6 col-md-6 col-xs-6" >
+                                <h4>Singapore</h4> 
+                                </div>
+                                
+                                <div class="col-lg-6 col-md-6 col-xs-6" >
+                                
+                                    <p>Rate from<br /> <span class="text-red">AED 2,745++</span></p> 
+                                
+                                </div>
+                            </div>
+                                               
+                        
+                        </div>
+                        
+                        
+                         <!--Bangkok-->
+                        <div class="col-lg-6 col-md-6 col-xs-6" >
+                            <div class="ksop-destination" >
+                            
+                                <div class="col-lg-6 col-md-6 col-xs-6" >
+                                <h4>Bangkok</h4> 
+                                </div>
+                                
+                                <div class="col-lg-6 col-md-6 col-xs-6" >
+                                
+                                    <p>Rate from<br /> <span class="text-red">AED 1,285++</span></p> 
+                                
+                                </div>
+                            </div>
+                                               
+                        
+                        </div>
+                      
+                        
+                        
+                         <!--Kuala Lumpur-->
+                        <div class="col-lg-6 col-md-6 col-xs-6" >
+                            <div class="ksop-destination" >
+                            
+                                <div class="col-lg-6 col-md-6 col-xs-6" >
+                                <h4>Kuala Lumpur</h4> 
+                                </div>
+                                
+                                <div class="col-lg-6 col-md-6 col-xs-6" >
+                                
+                                    <p>Rate from<br /> <span class="text-red">AED 2,640++</span></p> 
+                                
+                                </div>
+                            </div>
+                                               
+                        
+                        </div>
+                        
+                        <!--Inclusions-->
+                        <div class="col-lg-12 col-md-12 col-xs-12 inclusions">
+                                              
+                        
+                                                
+                       <div class="row">                                               
+                        <div class="col-lg-6 col-md-6 col-xs-6">
+                            
+                                
+                                    <h4 class="text-red">Inclusions</h4>
+                                        
+                                           <p><i class="fa fa-check text-success"></i> Roundtrip air ticket with stop over</p> 
+                                           <p><i class="fa fa-check text-success"></i> 2 nights hotel accomodation in stop over destination</p> 
+                                           <p><i class="fa fa-check text-success"></i> Roundtrip airport transfers</p> 
+                                           <p><i class="fa fa-check text-success"></i> Turn of your choice</p> 
+                                          
+                            
+                            
+                        </div> 
+                        
+                                                                        
+                        <!--Also Available-->
+                         <div class="col-lg-6 col-md-6 col-xs-6">
+                            
+                                
+                                    <h4 class="text-red">Also Available</h4>
+                                        
+                                           <p><i class="fa fa-check text-success"></i> Discounted rates for hotel extension nights</p> 
+                                           <p><i class="fa fa-check text-success"></i> Addional tours upon request</p> 
+                                           <p><i class="fa fa-check text-success"></i> 0% Installment plan up to 12 months</p> 
+                                           
+                                          
+                            
+                            
+                        </div> 
+                        
+                     
+                       
+                        
+                                
+                                    <!---
+                                        
+                                           <p>&bull; Final rate is dependent on actual travel date</p> 
+                                           <p>&bull; Rates are exclusive on taxes and service charge</p> 
+                                           
+                                           <p>&bull; Rates are per person</p> 
+                                           <p>&bull; Terms and condition apply</p> 
+                            -->
+                          <div class="clearfix"></div>
+                          
+                          <div class="first-half">
+                                           <p>&bull; Final rate is dependent on actual travel date</p> 
+                                           <p>&bull; Rates are exclusive on taxes and service charge</p> </div>
+                          <div class="second-half">
+                                           <p>&bull; Rates are per person</p> 
+                                           <p>&bull; Terms and condition apply</p> 
+                          </div>
+                            </div>
+                        </div>  
+                        
+                      
+                    </div>
+                    
+                    
+                </div>
+                
+                <div class="col-lg-6 col-md-6 col-xs-12">
+                <!--Kabayan Stop Over Hongkong-->
+                
+                  <div class="row">  
+                    <div class="col-lg-6 col-md-6 col-xs-6 kabayan-stop-over-package"> 
+                    
+                        <h4>SINGAPORE</h4>
+                        <img src="images/kabayan-stop-over/HongkongStopOver.jpg" class="img-responsive" style="width: 100%;"  />
+                        
+                        <p class="kabayan-stop-over-p">Rate from: <span class="kabayan-stop-over-package-price">AED 1,460++</span></p>    
+                        <div class="clearfix"></div>
+                        <p class="kabayan-stop-over-package-per-person"><span class="text-black"> PER PERSON</span></p>
+                    
+                    
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-xs-6 kabayan-stop-over-package"> 
+                    
+                        <h4>KUALA LUMPUR</h4>
+                        <img src="images/kabayan-stop-over/KualaLumpurStopOver.jpg" class="img-responsive" style="width: 100%;"  />
+                        
+                        <p class="kabayan-stop-over-p">Rate from: <span class="kabayan-stop-over-package-price">AED 2,750++</span></p>    
+                        <div class="clearfix"></div>
+                        <p class="kabayan-stop-over-package-per-person"><span class="text-black"> PER PERSON</span></p>
+                    
+                    
+                    </div>
+                    
+                    
+                    <div class="col-lg-6 col-md-6 col-xs-6 kabayan-stop-over-package"> 
+                    
+                        <h4>BANGKOK</h4>
+                        <img src="images/kabayan-stop-over/BangkokStopOver.jpg" class="img-responsive" style="width: 100%;"  />
+                        
+                        <p class="kabayan-stop-over-p">Rate from: <span class="kabayan-stop-over-package-price">AED 1,355++</span></p>    
+                        <div class="clearfix"></div>
+                        <p class="kabayan-stop-over-package-per-person"><span class="text-black"> PER PERSON</span></p>
+                    
+                    
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-xs-6 kabayan-stop-over-package"> 
+                    
+                        <h4>HONG KONG</h4>
+                        <img src="images/kabayan-stop-over/HongkongStopOver.jpg" class="img-responsive" style="width: 100%;"  />
+                        
+                        <p class="kabayan-stop-over-p">Rate from: <span class="kabayan-stop-over-package-price">AED 2,965++</span></p>    
+                        <div class="clearfix"></div>
+                        <p class="kabayan-stop-over-package-per-person"><span class="text-black"> PER PERSON</span></p>
+                    
+                    
+                    </div>
+                </div>
+                </div><!--End of collumn 2-->
+     </div>
+     
+     
+     
+     
+
+     
+</div>
+</div>
+
+
+     <div class="kabayan-stop-over">
+            
+            <div class="row">
+               <div class="location">
+                    <div class="col-lg-6 col-md-6 col-xs-12">
+                        <h4>Asiatravel.com - Dubai Office</h4>
+                        <h4><small>Asia Middle East Tours and Travel LLC.</small></h4>
+                        <p>Unit 701 Al Zarooni Bldg, Al Rigga Road, Deira
+                            PO Box 112758 Dubai, United Arab Emirates</p>
+                            
+                            <p>Tel. No: (+971 4) 250-2250</p>
+                            <p>Fax No: (+971 4) 250-2252 </p>
+                    </div>
+               </div>
+               
+               <div class="subscribe">
+                    <div class="col-lg-6 col-md-6 col-xs-12">
+                        
+<div class="row">
+
+                <div class="col-lg-12 col-md-12 col-xs-12" >
+                         <h4 class="">Discounts and special promotions</h4>
+                </div>
+                
+           
+                <div class="col-lg-12 col-md-12 col-xs-12 subscribe-wrapper" style="padding-top: 20px;">
+                
+                        <p>Receive regular update from asiatravel.com especially special promotions, best hotels
+                                    tours and packages etc.    </p>
+                
+                </div>
+                <form role="form">
+                
+                    <div class="form-group">
+                    
+                    <div class="col-lg-8 col-md-8 col-xs-8 subscribe-wrapper" style="padding-bottom: 20px;">
+                         <input type="text" class="form-control" placeholder="Enter your email address" />
+                    
+                    </div>
+                    </div>
+                    
+                    <div class="form-group">
+                    <div class="col-lg-4 col-md-4 col-xs-4 subscribe-wrapper" style="padding-bottom: 20px;">   
+                    
+                        <button type="button" class="btn btn-danger form-control">Subscribe Now!</button>
+                    
+                    </div>
+                    </div>
+                
+                </form>
+             
+</div>   
+                    
+                    
+               </div>
+            </div>
+            <div class="clearfix"></div>
+    <footer class="footer">       
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <p> <a href="#">About Asiatravel</a> | <a href="#">Subscribe to our travel agency</a> | <a href="#">Subscribe to our partner hotels</a> | 
+                <a href="#">Privacy Policy</a> </p>
+            
+            </div>
+            
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                
+                <h4><small>Copyright @ 2016 AT Reservation Network Pte Ltd. All rights reserved. <br />
+"Asiatravel" and "Global Reach, Local Touch" are trademarks of AT Reservation Network Pte Ltd.</small></h4>
+                
+            </div>
+            
+    </footer>          
+            
+     </div>
+     </div>
+
+
+
+
+
+</body>
+</html>
