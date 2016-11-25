@@ -1,5 +1,6 @@
 body{
     margin-top:20px;   
+    direction: rtl;
 }
 .at-social-media{
     float:left;
